@@ -1,0 +1,220 @@
+import { useState, useMemo } from "react";
+import { stations, systems, getAge, type Station } from "./data/stations";
+
+const MONTHS = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+function buildMonthMap(month: number): Map<number, Station[]> {
+  const map = new Map<number, Station[]>();
+  for (const s of stations) {
+    const d = new Date(s.opened);
+    if (d.getUTCMonth() + 1 === month) {
+      const day = d.getUTCDate();
+      const list = map.get(day) || [];
+      list.push(s);
+      map.set(day, list);
+    }
+  }
+  return map;
+}
+
+function DayDetail({
+  month,
+  day,
+  stations,
+  onClose,
+}: {
+  month: number;
+  day: number;
+  stations: Station[];
+  onClose: () => void;
+}) {
+  const grouped = useMemo(() => {
+    const groups = new Map<string, Station[]>();
+    for (const s of stations) {
+      const key = `${s.system}:${s.opened}`;
+      const list = groups.get(key) || [];
+      list.push(s);
+      groups.set(key, list);
+    }
+    return [...groups.entries()].sort((a, b) => {
+      const sysA = a[1][0].system;
+      const sysB = b[1][0].system;
+      return sysA.localeCompare(sysB);
+    });
+  }, [stations]);
+
+  return (
+    <div className="day-detail-overlay" onClick={onClose}>
+      <div className="day-detail" onClick={(e) => e.stopPropagation()}>
+        <div className="day-detail-header">
+          <h2>
+            {MONTHS[month - 1]} {day}
+          </h2>
+          <span className="day-detail-count">
+            {stations.length} station{stations.length === 1 ? "" : "s"}
+          </span>
+          <button className="day-detail-close" onClick={onClose}>
+            &times;
+          </button>
+        </div>
+        <div className="day-detail-body">
+          {grouped.map(([key, group]) => {
+            const sys = systems[group[0].system];
+            const age = getAge(group[0].opened);
+            const year = new Date(group[0].opened).getUTCFullYear();
+            return (
+              <div key={key} className="day-detail-group">
+                <div
+                  className="day-detail-group-header"
+                  style={{ borderLeftColor: sys.color }}
+                >
+                  <span className="day-detail-group-emoji">{sys.emoji}</span>
+                  <div>
+                    <span className="day-detail-group-system">{sys.name}</span>
+                    <span className="day-detail-group-meta">
+                      {year} &middot; {age} years ago &middot;{" "}
+                      {group[0].line || "Multiple lines"}
+                    </span>
+                  </div>
+                </div>
+                <ul className="day-detail-stations">
+                  {group.map((s, i) => (
+                    <li key={i}>
+                      <span className="day-detail-station-name">{s.name}</span>
+                      {s.line && (
+                        <span className="day-detail-station-line">
+                          {s.line}
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Calendar() {
+  const now = new Date();
+  const [selectedMonth, setSelectedMonth] = useState(now.getMonth() + 1);
+  const [selectedDay, setSelectedDay] = useState<number | null>(null);
+
+  const monthMap = useMemo(() => buildMonthMap(selectedMonth), [selectedMonth]);
+
+  const daysInMonth = new Date(2000, selectedMonth, 0).getDate();
+  const firstDayOfWeek = new Date(2000, selectedMonth - 1, 1).getDay();
+
+  const totalBirthdays = useMemo(() => {
+    let total = 0;
+    for (const list of monthMap.values()) total += list.length;
+    return total;
+  }, [monthMap]);
+
+  const maxCount = useMemo(() => {
+    let max = 0;
+    for (const list of monthMap.values()) {
+      if (list.length > max) max = list.length;
+    }
+    return max;
+  }, [monthMap]);
+
+  const cells: (number | null)[] = [];
+  for (let i = 0; i < firstDayOfWeek; i++) cells.push(null);
+  for (let d = 1; d <= daysInMonth; d++) cells.push(d);
+  while (cells.length % 7 !== 0) cells.push(null);
+
+  const todayMonth = now.getMonth() + 1;
+  const todayDay = now.getDate();
+
+  function prevMonth() {
+    setSelectedMonth((m) => (m === 1 ? 12 : m - 1));
+    setSelectedDay(null);
+  }
+
+  function nextMonth() {
+    setSelectedMonth((m) => (m === 12 ? 1 : m + 1));
+    setSelectedDay(null);
+  }
+
+  return (
+    <div className="calendar-view">
+      <div className="calendar-nav">
+        <button onClick={prevMonth} className="calendar-arrow">&larr;</button>
+        <h2 className="calendar-month-title">{MONTHS[selectedMonth - 1]}</h2>
+        <button onClick={nextMonth} className="calendar-arrow">&rarr;</button>
+      </div>
+      <p className="calendar-summary">
+        {totalBirthdays} station birthday{totalBirthdays === 1 ? "" : "s"} this
+        month
+      </p>
+
+      <div className="calendar-grid">
+        {WEEKDAYS.map((d) => (
+          <div key={d} className="calendar-weekday">
+            {d}
+          </div>
+        ))}
+        {cells.map((day, i) => {
+          if (day === null) {
+            return <div key={`empty-${i}`} className="calendar-cell empty" />;
+          }
+          const dayStations = monthMap.get(day) || [];
+          const count = dayStations.length;
+          const isToday = selectedMonth === todayMonth && day === todayDay;
+          const intensity =
+            count > 0 && maxCount > 0
+              ? Math.max(0.15, count / maxCount)
+              : 0;
+
+          return (
+            <div
+              key={day}
+              className={`calendar-cell${count > 0 ? " has-birthdays" : ""}${isToday ? " is-today" : ""}${selectedDay === day ? " selected" : ""}`}
+              onClick={count > 0 ? () => setSelectedDay(day) : undefined}
+              style={
+                count > 0
+                  ? {
+                      backgroundColor: `rgba(99, 102, 241, ${intensity * 0.25})`,
+                    }
+                  : undefined
+              }
+            >
+              <span className="calendar-day-number">{day}</span>
+              {count > 0 && (
+                <div className="calendar-day-content">
+                  {count <= 3 ? (
+                    dayStations.map((s, j) => (
+                      <span key={j} className="calendar-station-dot" title={s.name}>
+                        {systems[s.system].emoji}
+                      </span>
+                    ))
+                  ) : (
+                    <span className="calendar-day-count">{count}</span>
+                  )}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      {selectedDay !== null && monthMap.has(selectedDay) && (
+        <DayDetail
+          month={selectedMonth}
+          day={selectedDay}
+          stations={monthMap.get(selectedDay)!}
+          onClose={() => setSelectedDay(null)}
+        />
+      )}
+    </div>
+  );
+}

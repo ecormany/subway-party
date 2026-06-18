@@ -8,6 +8,7 @@ import {
   getStationsBySystem,
   type Station,
 } from "./data/stations";
+import Calendar from "./Calendar";
 import "./App.css";
 
 function StationCard({ station }: { station: Station }) {
@@ -67,10 +68,6 @@ type View = "today" | "browse" | "calendar";
 function App() {
   const [view, setView] = useState<View>("today");
   const [selectedSystem, setSelectedSystem] = useState<string | null>(null);
-  const [selectedMonth, setSelectedMonth] = useState<number>(
-    new Date().getMonth() + 1
-  );
-
   const now = new Date();
   const month = now.getMonth() + 1;
   const day = now.getDate();
@@ -89,33 +86,6 @@ function App() {
     return getStationsBySystem(selectedSystem);
   }, [selectedSystem]);
 
-  const calendarStations = useMemo(() => {
-    return stations
-      .filter((s) => {
-        const d = new Date(s.opened);
-        return d.getUTCMonth() + 1 === selectedMonth;
-      })
-      .sort((a, b) => {
-        const da = new Date(a.opened).getUTCDate();
-        const db = new Date(b.opened).getUTCDate();
-        return da - db;
-      });
-  }, [selectedMonth]);
-
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
 
   const todayFormatted = now.toLocaleDateString("en-US", {
     weekday: "long",
@@ -243,26 +213,7 @@ function App() {
           </>
         )}
 
-        {view === "calendar" && (
-          <>
-            <div className="month-filter">
-              {months.map((m, i) => (
-                <button
-                  key={m}
-                  className={selectedMonth === i + 1 ? "active" : ""}
-                  onClick={() => setSelectedMonth(i + 1)}
-                >
-                  {m}
-                </button>
-              ))}
-            </div>
-            <BirthdaySection
-              title={`${months[selectedMonth - 1]} Birthdays`}
-              subtitle={`${calendarStations.length} stations opened in ${months[selectedMonth - 1]}`}
-              stations={calendarStations}
-            />
-          </>
-        )}
+        {view === "calendar" && <Calendar />}
       </main>
 
       <footer>
