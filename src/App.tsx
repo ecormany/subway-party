@@ -9,7 +9,7 @@ import {
   type Station,
 } from "./data/stations";
 import Calendar from "./Calendar";
-import { getLineBadges } from "./data/lines";
+import { getLineBadges, getAllLinesForSystem, stationHasLine } from "./data/lines";
 import "./App.css";
 
 function LineBadges({ system, line, stationName }: { system: string; line: string; stationName: string }) {
@@ -90,6 +90,10 @@ type View = "today" | "browse" | "calendar";
 function App() {
   const [view, setView] = useState<View>("today");
   const [selectedSystem, setSelectedSystem] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState<"name" | "age">("name");
+  const [sortDir, setSortDir] = useState<"asc" | "desc">("asc");
+  const [selectedLine, setSelectedLine] = useState<string | null>(null);
   const now = new Date();
   const month = now.getMonth() + 1;
   const day = now.getDate();
@@ -103,10 +107,48 @@ function App() {
     [month, day]
   );
 
-  const browseStations = useMemo(() => {
+  const systemStations = useMemo(() => {
     if (!selectedSystem) return stations;
     return getStationsBySystem(selectedSystem);
   }, [selectedSystem]);
+
+  const availableLines = useMemo(() => {
+    if (!selectedSystem) return [];
+    return getAllLinesForSystem(selectedSystem, systemStations);
+  }, [selectedSystem, systemStations]);
+
+  const browseStations = useMemo(() => {
+    let filtered = systemStations;
+
+    // Line filter
+    if (selectedLine && selectedSystem) {
+      filtered = filtered.filter((s) =>
+        stationHasLine(s.system, s.line, s.name, selectedLine)
+      );
+    }
+
+    // Search
+    if (searchQuery.trim()) {
+      const q = searchQuery.trim().toLowerCase();
+      filtered = filtered.filter((s) =>
+        s.name.toLowerCase().includes(q)
+      );
+    }
+
+    // Sort
+    const sorted = [...filtered].sort((a, b) => {
+      if (sortBy === "name") {
+        return a.name.localeCompare(b.name);
+      } else {
+        const ageA = new Date(a.opened).getTime();
+        const ageB = new Date(b.opened).getTime();
+        return ageA - ageB; // oldest first for asc
+      }
+    });
+
+    if (sortDir === "desc") sorted.reverse();
+    return sorted;
+  }, [systemStations, selectedLine, selectedSystem, searchQuery, sortBy, sortDir]);
 
 
   const todayFormatted = now.toLocaleDateString("en-US", {
@@ -204,7 +246,7 @@ function App() {
             <div className="system-filter">
               <button
                 className={selectedSystem === null ? "active" : ""}
-                onClick={() => setSelectedSystem(null)}
+                onClick={() => { setSelectedSystem(null); setSelectedLine(null); }}
               >
                 All Systems
               </button>
@@ -212,7 +254,7 @@ function App() {
                 <button
                   key={id}
                   className={selectedSystem === id ? "active" : ""}
-                  onClick={() => setSelectedSystem(id)}
+                  onClick={() => { setSelectedSystem(id); setSelectedLine(null); }}
                   style={
                     selectedSystem === id
                       ? { backgroundColor: sys.color, borderColor: sys.color }
@@ -223,15 +265,78 @@ function App() {
                 </button>
               ))}
             </div>
-            <BirthdaySection
-              title={
-                selectedSystem
-                  ? `${systems[selectedSystem].emoji} ${systems[selectedSystem].name}`
-                  : "All Stations"
-              }
-              subtitle={`${browseStations.length} stations`}
-              stations={browseStations}
-            />
+
+            {availableLines.length > 0 && (
+              <div className="line-filter">
+                <button
+                  className={selectedLine === null ? "active" : ""}
+                  onClick={() => setSelectedLine(null)}
+                >
+                  All Lines
+                </button>
+                {availableLines.map((lb) => (
+                  <button
+                    key={lb.label}
+                    className={`line-filter-btn${selectedLine === lb.label ? " active" : ""}`}
+                    onClick={() => setSelectedLine(selectedLine === lb.label ? null : lb.label)}
+                    style={
+                      selectedLine === lb.label
+                        ? { backgroundColor: lb.bg, borderColor: lb.bg, color: lb.fg }
+                        : {}
+                    }
+                  >
+                    {lb.label}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            <div className="browse-controls">
+              <input
+                type="text"
+                className="search-input"
+                placeholder="Search stations..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              <div className="sort-controls">
+                <select
+                  className="sort-select"
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as "name" | "age")}
+                >
+                  <option value="name">Name</option>
+                  <option value="age">Age</option>
+                </select>
+                <button
+                  className="sort-dir-btn"
+                  onClick={() => setSortDir((d) => (d === "asc" ? "desc" : "asc"))}
+                  title={sortDir === "asc" ? "Ascending" : "Descending"}
+                >
+                  {sortDir === "asc" ? "↑" : "↓"}
+                </button>
+              </div>
+            </div>
+
+            {browseStations.length > 0 ? (
+              <BirthdaySection
+                title={
+                  selectedSystem
+                    ? `${systems[selectedSystem].emoji} ${systems[selectedSystem].name}`
+                    : "All Stations"
+                }
+                subtitle={`${browseStations.length} station${browseStations.length === 1 ? "" : "s"}`}
+                stations={browseStations}
+              />
+            ) : (
+              <div className="no-birthdays">
+                <p className="no-birthdays-emoji">🔍</p>
+                <p>No stations found.</p>
+                <p className="no-birthdays-sub">
+                  Try a different search or filter combination.
+                </p>
+              </div>
+            )}
           </>
         )}
 

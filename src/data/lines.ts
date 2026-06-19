@@ -282,6 +282,50 @@ function splitColorLines(
 
 // ─── Public API ──────────────────────────────────────────────────────────────
 
+/**
+ * Return all distinct line badges for a system, suitable for a filter UI.
+ * Computed from the station data to only show lines that actually appear.
+ */
+export function getAllLinesForSystem(
+  system: string,
+  stationList: { line: string; name: string }[]
+): LineBadge[] {
+  const seen = new Set<string>();
+  const result: LineBadge[] = [];
+
+  for (const s of stationList) {
+    const badges = getLineBadges(system, s.line, s.name);
+    for (const b of badges) {
+      if (!seen.has(b.label)) {
+        seen.add(b.label);
+        result.push(b);
+      }
+    }
+  }
+
+  // Sort: numbers first (for NYC), then alphabetical
+  return result.sort((a, b) => {
+    const aNum = /^\d/.test(a.label);
+    const bNum = /^\d/.test(b.label);
+    if (aNum && !bNum) return -1;
+    if (!aNum && bNum) return 1;
+    return a.label.localeCompare(b.label);
+  });
+}
+
+/**
+ * Check if a station serves a given line label.
+ */
+export function stationHasLine(
+  system: string,
+  lineStr: string,
+  stationName: string,
+  lineLabel: string
+): boolean {
+  const badges = getLineBadges(system, lineStr, stationName);
+  return badges.some((b) => b.label === lineLabel);
+}
+
 export function getLineBadges(
   system: string,
   lineStr: string,

@@ -286,6 +286,112 @@
   color: white;
 }
 
+/* Line Filter */
+.line-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 16px;
+  justify-content: center;
+}
+
+.line-filter button {
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--sans);
+}
+
+.line-filter button:hover {
+  border-color: var(--accent-border);
+}
+
+.line-filter button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+/* Browse Controls */
+.browse-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-h);
+  font-family: var(--sans);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-border);
+}
+
+.sort-controls {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sort-select {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text-h);
+  font-family: var(--sans);
+  cursor: pointer;
+  outline: none;
+}
+
+.sort-select:focus {
+  border-color: var(--accent);
+}
+
+.sort-dir-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--text-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  font-family: var(--sans);
+}
+
+.sort-dir-btn:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
 /* Calendar */
 .calendar-view {
   margin: 24px 0;
@@ -609,5 +715,13 @@ footer {
 
   .day-detail-stations {
     grid-template-columns: 1fr;
+  }
+
+  .browse-controls {
+    flex-wrap: wrap;
+  }
+
+  .search-input {
+    width: 100%;
   }
 }
