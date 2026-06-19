@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { stations, systems, getAge, type Station } from "./data/stations";
+import { getLineBadges } from "./data/lines";
 
 const MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -83,16 +84,28 @@ function DayDetail({
                   </div>
                 </div>
                 <ul className="day-detail-stations">
-                  {group.map((s, i) => (
-                    <li key={i}>
-                      <span className="day-detail-station-name">{s.name}</span>
-                      {s.line && (
-                        <span className="day-detail-station-line">
-                          {s.line}
-                        </span>
-                      )}
-                    </li>
-                  ))}
+                  {group.map((s, i) => {
+                    const badges = getLineBadges(s.system, s.line, s.name);
+                    const isNyc = s.system === "nyc";
+                    return (
+                      <li key={i}>
+                        <span className="day-detail-station-name">{s.name}</span>
+                        {badges.length > 0 && (
+                          <span className="day-detail-badges">
+                            {badges.map((b, j) => (
+                              <span
+                                key={j}
+                                className={`line-badge${isNyc ? " line-badge-round" : ""} line-badge-sm`}
+                                style={{ backgroundColor: b.bg, color: b.fg }}
+                              >
+                                {b.label}
+                              </span>
+                            ))}
+                          </span>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             );

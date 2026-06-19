@@ -14,6 +14,7 @@ const SYSTEMS = [
     nameCol: "Station",
     lineCol: "Lines",
     openedCol: "Opened",
+    useTemplateLines: true,
   },
   {
     id: "cta",
@@ -45,6 +46,27 @@ async function fetchWikiHTML(article) {
   });
   if (!res.ok) throw new Error(`Failed to fetch ${article}: ${res.status}`);
   return res.text();
+}
+
+/**
+ * Extract line names from Wikipedia's data-mw template params.
+ * Used for WMATA and similar systems where lines are rendered as color icons
+ * via templates like {{Rint|Washington|Red}}.
+ */
+function extractTemplateLines(el, $) {
+  const lineNames = [];
+  $(el).find("[data-mw]").each((_, dmEl) => {
+    try {
+      const dm = JSON.parse($(dmEl).attr("data-mw") || "{}");
+      const parts = dm.parts || [];
+      for (const p of parts) {
+        if (p?.template?.params?.["2"]?.wt) {
+          lineNames.push(p.template.params["2"].wt);
+        }
+      }
+    } catch {}
+  });
+  return lineNames.length > 0 ? lineNames.join(", ") : "";
 }
 
 function cleanText(el, $) {
@@ -209,7 +231,12 @@ async function scrapeSystem(config) {
       if (rowCells.length > 0 && rowCells.every((c) => c.tagName === "th")) continue;
 
       const name = cleanText(row[nameIdx], $);
-      const line = lineIdx >= 0 && row[lineIdx] ? cleanText(row[lineIdx], $) : "";
+      let line = lineIdx >= 0 && row[lineIdx] ? cleanText(row[lineIdx], $) : "";
+      // For systems using color-icon templates (e.g. WMATA), extract from data-mw
+      if (config.useTemplateLines && lineIdx >= 0 && row[lineIdx]) {
+        const tmplLine = extractTemplateLines(row[lineIdx], $);
+        if (tmplLine) line = tmplLine;
+      }
       const openedText =  cleanText(row[openedIdx], $);
       const opened = parseDate(openedText);
 

@@ -2084,613 +2084,613 @@
   {
     "name": "Addison Road",
     "system": "wmata",
-    "line": "",
+    "line": "Silver, Blue",
     "opened": "1980-11-22"
   },
   {
     "name": "Anacostia",
     "system": "wmata",
-    "line": "",
+    "line": "Green",
     "opened": "1991-12-28"
   },
   {
     "name": "Archives",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1983-04-30"
   },
   {
     "name": "Arlington Cemetery",
     "system": "wmata",
-    "line": "",
+    "line": "Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Ashburn",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2022-11-15"
   },
   {
     "name": "Ballston–MU",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1979-12-11"
   },
   {
     "name": "Benning Road",
     "system": "wmata",
-    "line": "",
+    "line": "Silver, Blue",
     "opened": "1980-11-22"
   },
   {
     "name": "Bethesda",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1984-08-25"
   },
   {
     "name": "Braddock Road",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Blue",
     "opened": "1983-12-17"
   },
   {
     "name": "Branch Avenue",
     "system": "wmata",
-    "line": "",
+    "line": "Green",
     "opened": "2001-01-13"
   },
   {
     "name": "Brookland–CUA",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1978-02-06"
   },
   {
     "name": "Capitol Heights",
     "system": "wmata",
-    "line": "",
+    "line": "Silver, Blue",
     "opened": "1980-11-22"
   },
   {
     "name": "Capitol South",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Cheverly",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1978-11-20"
   },
   {
     "name": "Clarendon",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1979-12-11"
   },
   {
     "name": "Cleveland Park",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1981-12-05"
   },
   {
     "name": "College Park–University of Maryland",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1993-12-11"
   },
   {
     "name": "Columbia Heights",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1999-09-18"
   },
   {
     "name": "Congress Heights",
     "system": "wmata",
-    "line": "",
+    "line": "Green",
     "opened": "2001-01-13"
   },
   {
     "name": "Court House",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1979-12-11"
   },
   {
     "name": "Crystal City",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Deanwood",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1978-11-20"
   },
   {
     "name": "Downtown Largo",
     "system": "wmata",
-    "line": "",
+    "line": "Silver, Blue",
     "opened": "2004-12-18"
   },
   {
     "name": "Dunn Loring",
     "system": "wmata",
-    "line": "",
+    "line": "Orange",
     "opened": "1986-06-07"
   },
   {
     "name": "Dupont Circle",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1977-01-17"
   },
   {
     "name": "East Falls Church*",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1986-06-07"
   },
   {
     "name": "Eastern Market",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Eisenhower Avenue",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow",
     "opened": "1983-12-17"
   },
   {
     "name": "Farragut North",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1976-03-29"
   },
   {
     "name": "Farragut West",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Federal Center SW",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Federal Triangle",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Foggy Bottom–GWU",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Forest Glen",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1990-09-22"
   },
   {
     "name": "Fort Totten* (upper level)",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1978-02-06"
   },
   {
     "name": "Fort Totten* (lower level)",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1993-12-11"
   },
   {
     "name": "Franconia–Springfield*",
     "system": "wmata",
-    "line": "",
+    "line": "Blue",
     "opened": "1997-06-29"
   },
   {
     "name": "Friendship Heights",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1984-08-25"
   },
   {
     "name": "Gallery Place* (upper level)",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1976-12-15"
   },
   {
     "name": "Gallery Place* (lower level)",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1983-04-30"
   },
   {
     "name": "Georgia Avenue–Petworth",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1999-09-18"
   },
   {
     "name": "Glenmont",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1998-07-25"
   },
   {
     "name": "Greenbelt*",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1993-12-11"
   },
   {
     "name": "Greensboro",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2014-07-26"
   },
   {
     "name": "Grosvenor–Strathmore",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1984-08-25"
   },
   {
     "name": "Herndon",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2022-11-15"
   },
   {
     "name": "Huntington",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow",
     "opened": "1983-12-17"
   },
   {
     "name": "Hyattsville Crossing",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1993-12-11"
   },
   {
     "name": "Innovation Center",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2022-11-15"
   },
   {
     "name": "Judiciary Square",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1976-03-29"
   },
   {
     "name": "King Street–Old Town*",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Blue",
     "opened": "1983-12-17"
   },
   {
     "name": "L'Enfant Plaza* (upper level)",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1983-04-30"
   },
   {
     "name": "L'Enfant Plaza* (lower level)",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Landover",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1978-11-20"
   },
   {
     "name": "Loudoun Gateway",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2022-11-15"
   },
   {
     "name": "McLean",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2014-07-26"
   },
   {
     "name": "McPherson Square",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Medical Center",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1984-08-25"
   },
   {
     "name": "Metro Center* (upper level)",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1976-03-29"
   },
   {
     "name": "Metro Center* (lower level)",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Minnesota Avenue",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1978-11-20"
   },
   {
     "name": "Morgan Boulevard",
     "system": "wmata",
-    "line": "",
+    "line": "Silver, Blue",
     "opened": "2004-12-18"
   },
   {
     "name": "Mount Vernon Square*",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1991-05-11"
   },
   {
     "name": "Navy Yard–Ballpark",
     "system": "wmata",
-    "line": "",
+    "line": "Green",
     "opened": "1991-12-28"
   },
   {
     "name": "Naylor Road",
     "system": "wmata",
-    "line": "",
+    "line": "Green",
     "opened": "2001-01-13"
   },
   {
     "name": "New Carrollton*",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1978-11-20"
   },
   {
     "name": "NoMa–Gallaudet U",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "2004-11-20"
   },
   {
     "name": "North Bethesda",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1984-12-15"
   },
   {
     "name": "Pentagon*",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Pentagon City",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Potomac Avenue",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Potomac Yard",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Blue",
     "opened": "2023-05-19"
   },
   {
     "name": "Reston Town Center",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2022-11-15"
   },
   {
     "name": "Rhode Island Avenue",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1976-03-29"
   },
   {
     "name": "Rockville",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1984-12-15"
   },
   {
     "name": "Ronald Reagan WashingtonNational Airport",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Rosslyn*",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Shady Grove",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1984-12-15"
   },
   {
     "name": "Shaw–Howard University",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1991-05-11"
   },
   {
     "name": "Silver Spring",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1978-02-06"
   },
   {
     "name": "Smithsonian",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Southern Avenue",
     "system": "wmata",
-    "line": "",
+    "line": "Green",
     "opened": "2001-01-13"
   },
   {
     "name": "Spring Hill",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2014-07-26"
   },
   {
     "name": "Stadium–Armory*",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver, Blue",
     "opened": "1977-07-01"
   },
   {
     "name": "Suitland",
     "system": "wmata",
-    "line": "",
+    "line": "Green",
     "opened": "2001-01-13"
   },
   {
     "name": "Takoma",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1978-02-06"
   },
   {
     "name": "Tenleytown–AU",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1984-08-25"
   },
   {
     "name": "Twinbrook",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1984-12-15"
   },
   {
     "name": "Tysons",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2014-07-26"
   },
   {
     "name": "U Street",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1991-05-11"
   },
   {
     "name": "Union Station",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1976-03-29"
   },
   {
     "name": "Van Dorn Street",
     "system": "wmata",
-    "line": "",
+    "line": "Blue",
     "opened": "1991-06-15"
   },
   {
     "name": "Van Ness–UDC",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1981-12-05"
   },
   {
     "name": "Vienna",
     "system": "wmata",
-    "line": "",
+    "line": "Orange",
     "opened": "1986-06-07"
   },
   {
     "name": "Virginia Square–GMU",
     "system": "wmata",
-    "line": "",
+    "line": "Orange, Silver",
     "opened": "1979-12-11"
   },
   {
     "name": "Washington Dulles International Airport",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2022-11-15"
   },
   {
     "name": "Waterfront",
     "system": "wmata",
-    "line": "",
+    "line": "Green",
     "opened": "1991-12-28"
   },
   {
     "name": "West Falls Church",
     "system": "wmata",
-    "line": "",
+    "line": "Orange",
     "opened": "1986-06-07"
   },
   {
     "name": "West Hyattsville",
     "system": "wmata",
-    "line": "",
+    "line": "Yellow, Green",
     "opened": "1993-12-11"
   },
   {
     "name": "Wheaton",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1990-09-22"
   },
   {
     "name": "Wiehle–Reston East",
     "system": "wmata",
-    "line": "",
+    "line": "Silver",
     "opened": "2014-07-26"
   },
   {
     "name": "Woodley Park",
     "system": "wmata",
-    "line": "",
+    "line": "Red",
     "opened": "1981-12-05"
   },
   {

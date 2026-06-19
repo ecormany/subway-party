@@ -9,7 +9,29 @@ import {
   type Station,
 } from "./data/stations";
 import Calendar from "./Calendar";
+import { getLineBadges } from "./data/lines";
 import "./App.css";
+
+function LineBadges({ system, line, stationName }: { system: string; line: string; stationName: string }) {
+  const badges = getLineBadges(system, line, stationName);
+  if (badges.length === 0) return null;
+
+  const isNyc = system === "nyc";
+
+  return (
+    <div className="line-badges">
+      {badges.map((b, i) => (
+        <span
+          key={i}
+          className={`line-badge${isNyc ? " line-badge-round" : ""}`}
+          style={{ backgroundColor: b.bg, color: b.fg }}
+        >
+          {b.label}
+        </span>
+      ))}
+    </div>
+  );
+}
 
 function StationCard({ station }: { station: Station }) {
   const age = getAge(station.opened);
@@ -31,8 +53,8 @@ function StationCard({ station }: { station: Station }) {
           <span className="station-system">{sys.name}</span>
         </div>
       </div>
+      <LineBadges system={station.system} line={station.line} stationName={station.name} />
       <div className="station-details">
-        <span className="station-line">{station.line}</span>
         <span className="station-date">Born {formattedDate}</span>
         <span className="station-age">{age} years old</span>
       </div>
