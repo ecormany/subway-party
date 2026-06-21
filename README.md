@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# Subway Party 🚇🎂
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> I think we should know the birthdays of all public transit stops
 
-Currently, two official plugins are available:
+So it was said on Discord, so it shall be.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is a good vibes Claude Code repo, have fun! 😎
 
-## React Compiler
+## Systems covered
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*Initial data set scraped from Wikipedia*
 
-## Expanding the ESLint configuration
+- **New York City Subway** (347 stations, since 1904)
+- **Chicago L** (108 stations, since 1892)
+- **Washington Metro** (102 stations, since 1976)
+- **MBTA / Boston** (56 stations, since 1897)
+- **SEPTA / Philadelphia** (51 stations, since 1907)
+- **BART / San Francisco** (50 stations, since 1972)
+- **MARTA / Atlanta** (38 stations, since 1979)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Today** — See which stations are celebrating a birthday today, plus a week of upcoming birthdays and aggregate stats.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+**Browse** — Search, sort, and filter all stations. Filter by transit system, then narrow further by individual line. Sort by name or age, ascending or descending. 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**Calendar** — Month-by-month view. Click any day to see every station that opened on that date, grouped by system and year.
+
+**Station cards** — Each card shows the station name, system, color-coded line badges, opening date, and age. Hover to reveal links to the station's Wikipedia article and Google Maps location.
+
+## Data sources
+
+Station data is primarily scraped from Wikipedia list articles using the scripts in `scripts/`. The scraper extracts station names, lines, opening dates, and Wikipedia article links from wikitables. A second pass fetches geographic coordinates from the Wikipedia API for direct map links.
+
+MBTA and SEPTA opening dates are not available in their respective Wikipedia list tables, so those stations are maintained manually in `scripts/generate-stations-ts.mjs`.
+
+## Development
+
+```sh
+npm install
+npm run dev        # Start dev server at localhost:5173
+npm run build      # Type-check and build for production
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Refreshing station data
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+node scripts/scrape-wikipedia.mjs > scripts/scraped-stations.json
+node scripts/generate-stations-ts.mjs > src/data/stations.ts
 ```
+
+The first command scrapes Wikipedia for NYC, WMATA, CTA, BART, and MARTA stations. The second merges the scraped data with manual MBTA/SEPTA entries, fetches coordinates from the Wikipedia API, and generates the TypeScript data file.
+
+## Built with
+
+React, TypeScript, Vite. No UI framework — just CSS custom properties and a light/dark theme via `prefers-color-scheme`. Data scraping uses Cheerio.
