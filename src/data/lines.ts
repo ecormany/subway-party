@@ -260,8 +260,7 @@ const martaStationLines: Record<string, string[]> = {
 
 function splitColorLines(
   lineStr: string,
-  colorMap: Record<string, { bg: string; fg: string }>,
-  stripSuffix?: string
+  colorMap: Record<string, { bg: string; fg: string }>
 ): LineBadge[] {
   if (!lineStr) return [];
 
