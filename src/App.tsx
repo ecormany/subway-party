@@ -35,6 +35,21 @@ function LineBadges({ system, line, stationName, routes }: { system: string; lin
   );
 }
 
+const numChunk = /(\d+)/;
+function naturalCompare(a: string, b: string): number {
+  const aParts = a.split(numChunk);
+  const bParts = b.split(numChunk);
+  for (let i = 0; i < Math.min(aParts.length, bParts.length); i++) {
+    if (aParts[i] !== bParts[i]) {
+      const aNum = Number(aParts[i]);
+      const bNum = Number(bParts[i]);
+      if (!isNaN(aNum) && !isNaN(bNum)) return aNum - bNum;
+      return aParts[i].localeCompare(bParts[i]);
+    }
+  }
+  return aParts.length - bParts.length;
+}
+
 function stationWikiUrl(station: Station): string {
   if (station.wiki) {
     return `https://en.wikipedia.org/wiki/${encodeURIComponent(station.wiki)}`;
@@ -178,7 +193,7 @@ function App() {
     // Sort
     const sorted = [...filtered].sort((a, b) => {
       if (sortBy === "name") {
-        return a.name.localeCompare(b.name);
+        return naturalCompare(a.name, b.name);
       } else {
         const ageA = new Date(a.opened).getTime();
         const ageB = new Date(b.opened).getTime();
