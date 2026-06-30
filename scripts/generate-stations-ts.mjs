@@ -10,7 +10,7 @@ for (const s of scraped) {
   if (stationRenames[s.name]) s.name = stationRenames[s.name];
 }
 
-// MBTA and SEPTA don't have opening dates in their Wikipedia tables,
+// MBTA, SEPTA, and RTA don't have opening dates in their Wikipedia tables,
 // so we maintain these manually.
 const manual = [
   // MBTA (Boston) — from individual station/line articles
@@ -123,6 +123,59 @@ const manual = [
   { name: "Margaret–Orthodox", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "Margaret–Orthodox_station" },
   { name: "Frankford Transportation Center", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "Frankford_Transportation_Center" },
   { name: "Arrott Transportation Center", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "Arrott_Transportation_Center" },
+  
+  // RTA (Cleveland) — from individual station/line articles
+  { name: "Airport", system: "rta", line: "Red", opened: "1968-11-15", wiki: "Cleveland_Hopkins_International_Airport_(RTA_Rapid_Transit_station)" },
+  { name: "Brookpark", system: "rta", line: "Red", opened: "1969-04-20", wiki: "Brookpark_station" },
+  { name: "Puritas–West 150th", system: "rta", line: "Red", opened: "1968-11-15", wiki: "Puritas–West_150th_station" },
+  { name: "West Park", system: "rta", line: "Red", opened: "1958-11-15", wiki: "West_Park_station_(RTA_Rapid_Transit)" },
+  { name: "Triskett", system: "rta", line: "Red", opened: "1958-11-15", wiki: "Triskett_station" },
+  { name: "West 117th–Madison", system: "rta", line: "Red", opened: "1955-08-15", wiki: "West_117th–Madison_station" },
+  { name: "West Boulevard–Cudell", system: "rta", line: "Red", opened: "1955-08-15", wiki: "West_Boulevard–Cudell_station" },
+  { name: "West 65th–Lorain", system: "rta", line: "Red", opened: "1955-08-15", wiki: "West_65th–Lorain_station" },
+  { name: "West 25th–Ohio City", system: "rta", line: "Red", opened: "1955-08-15", wiki: "West_25th–Ohio_City_station" },
+  { name: "Tower City", system: "rta", line: "Red,Green,Blue,Waterfront", opened: "1955-03-15", wiki: "Tower_City_station" },
+  { name: "Tri-C–Campus District", system: "rta", line: "Red,Green,Blue", opened: "1930-07-20", wiki: "Tri-C–Campus_District_station" },
+  { name: "East 55th", system: "rta", line: "Red,Green,Blue", opened: "1920-04-11", wiki: "East_55th_station" },
+  { name: "East 79th", system: "rta", line: "Waterfront", opened: "1955-03-15", wiki: "East_79th_station_(GCRTA_Red_Line)" },
+  { name: "East 105th–Quincy", system: "rta", line: "Red", opened: "1955-03-15", wiki: "East_105th–Quincy_station" },
+  { name: "Cedar–University", system: "rta", line: "Red", opened: "1955-03-15", wiki: "Cedar–University_station" },
+  // { name: "Euclid–East 120th", system: "rta", line: "Red", opened: "1955-03-15", wiki: "Euclid–East_120th_(RTA_Rapid_Transit_station)" },
+  { name: "Little Italy-University Circle", system: "rta", line: "Red", opened: "2015-08-11", wiki: "Little_Italy–University_Circle_station" },
+  { name: "Superior", system: "rta", line: "Red", opened: "1955-03-15", wiki: "Superior_station_(RTA_Rapid_Transit)" },
+  { name: "Windermere", system: "rta", line: "Red", opened: "1955-03-15", wiki: "Windermere_(RTA_Rapid_Transit_station)" },
+  { name: "South Harbor", system: "rta", line: "Waterfront", opened: "1996-07-10", wiki: "South_Harbor_station" },
+  { name: "East 9th–North Coast", system: "rta", line: "Waterfront", opened: "1996-07-10", wiki: "East_9th–North_Coast_station" },
+  { name: "Cleveland Lakefront-Amtrak", system: "rta", line: "Waterfront", opened: "1975-10-28", wiki: "Cleveland_Lakefront_Station" },
+  { name: "West 3rd-Stadium", system: "rta", line: "Waterfront", opened: "1999-08-12", wiki: "West_3rd_station" },
+  { name: "Flats East Bank", system: "rta", line: "Waterfront", opened: "1996-07-10", wiki: "Flats_East_Bank_station" },
+  { name: "Settlers Landing", system: "rta", line: "Waterfront", opened: "1996-07-10", wiki: "Settlers_Landing_station" },
+  { name: "East 79th", system: "rta", line: "Green,Blue", opened: "1920-04-11", wiki: "East_79th_station_(GCRTA_Blue_and_Green_Lines)" },
+  { name: "Buckeye-Woodhill", system: "rta", line: "Green,Blue", opened: "1920-04-11", wiki: "Buckeye–Woodhill_station" },
+  { name: "East 116th–St. Luke's", system: "rta", line: "Green,Blue", opened: "1920-04-11", wiki: "East_116th–St._Luke%27s_station" },
+  { name: "Shaker Square", system: "rta", line: "Green,Blue", opened: "1920-04-11", wiki: "Shaker_Square_station" },
+  { name: "Coventry", system: "rta", line: "Green", opened: "1913-12-17", wiki: "Coventry_station_(GCRTA)" },
+  { name: "Southington", system: "rta", line: "Green", opened: "1913-12-17", wiki: "Southington_station_(GCRTA)" },
+  { name: "South Park", system: "rta", line: "Green", opened: "1913-12-17", wiki: "South_Park_station_(GCRTA)" },
+  { name: "Lee–Shaker", system: "rta", line: "Green", opened: "1913-12-17", wiki: "Lee_–_Shaker_(RTA_Rapid_Transit_station)" },
+  { name: "Attleboro", system: "rta", line: "Green", opened: "1913-12-17", wiki: "Attleboro_station_(GCRTA)" },
+  { name: "Eaton", system: "rta", line: "Green", opened: "1915-05-20", wiki: "Eaton_station" },
+  { name: "Courtland", system: "rta", line: "Green", opened: "1915-05-20", wiki: "Courtland_station" },
+  { name: "Warrensville–Shaker", system: "rta", line: "Green", opened: "1928-12-06", wiki: "Warrensville–Shaker_station" },
+  { name: "Belvoir", system: "rta", line: "Green", opened: "1936-11-01", wiki: "Belvoir_station" },
+  { name: "West Green", system: "rta", line: "Green", opened: "1936-11-01", wiki: "West_Green_station" },
+  { name: "Green Road", system: "rta", line: "Green", opened: "1936-11-01", wiki: "Green_Road_station" },
+  { name: "Drexmore", system: "rta", line: "Blue", opened: "1948-01-23", wiki: "Drexmore_station" },
+  { name: "South Woodland", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "South_Woodland_station" },
+  { name: "Southington", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Southington_station_(GCRTA_Blue_Line)" },
+  { name: "Onaway", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Onaway_station" },
+  { name: "Ashby", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Ashby_station_(GCRTA)" },
+  { name: "Lee-Van Aken", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Lee–Van_Aken_station" },
+  { name: "Avalon", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Avalon_station_(GCRTA)" },
+  { name: "Kenmore", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Kenmore_station_(GCRTA)" },
+  { name: "Lynnfield", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Lynnfield_station" },
+  { name: "Farnsleigh", system: "rta", line: "Blue", opened: "1930-07-30", wiki: "Farnsleigh_station" },
+  { name: "Warrensville–Van Aken", system: "rta", line: "Blue", opened: "1930-07-30", wiki: "Warrensville–Van_Aken_station" },
 ];
 
 // NYC station complexes: physically connected stations that should be merged
@@ -460,6 +513,7 @@ export const systems: Record<string, { name: string; city: string; color: string
   mbta: { name: "MBTA", city: "Boston", color: "#003DA5", emoji: "🦞" },
   septa: { name: "SEPTA", city: "Philadelphia", color: "#E1251B", emoji: "🔔" },
   marta: { name: "MARTA", city: "Atlanta", color: "#CE8B3A", emoji: "🍑" },
+  rta: { name: "RTA", city: "Cleveland", color: "#D7192A", emoji: "🎸" },
 };
 
 export const stations: Station[] = [`);
