@@ -26,7 +26,10 @@ function LineBadges({ system, line, stationName, routes }: { system: string; lin
         <span
           key={i}
           className={`line-badge${isNyc ? " line-badge-round" : ""}`}
-          style={{ backgroundColor: b.bg, color: b.fg }}
+          style={{
+            background: b.bg2 ? `linear-gradient(to bottom, ${b.bg} 50%, ${b.bg2} 50%)` : b.bg,
+            color: b.fg,
+          }}
         >
           {b.label}
         </span>
