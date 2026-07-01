@@ -95,7 +95,10 @@ function DayDetail({
                               <span
                                 key={j}
                                 className={`line-badge${isNyc ? " line-badge-round" : ""} line-badge-sm`}
-                                style={{ backgroundColor: b.bg, color: b.fg }}
+                                style={{
+                                  background: b.bg2 ? `linear-gradient(to bottom, ${b.bg} 50%, ${b.bg2} 50%)` : b.bg,
+                                  color: b.fg,
+                                }}
                               >
                                 {b.label}
                               </span>

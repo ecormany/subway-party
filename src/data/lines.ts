@@ -10,10 +10,11 @@
  */
 
 export interface LineBadge {
-  label: string;
-  bg: string;
-  fg: string;
-}
+   label: string;
+   bg: string;
+   bg2?: string; // optional second color for split/two-tone badges (e.g. RTA Waterfront)
+   fg: string;
+ }
 
 // ─── NYC Subway ──────────────────────────────────────────────────────────────
 
@@ -270,6 +271,14 @@ const martaStationLines: Record<string, string[]> = {
   "West Lake": ["Green"],
 };
 
+// ─── RTA  ────────────────────────────────────────────────────────────────────
+
+const rtaLineColors: Record<string, { bg: string; fg: string }> = {
+  Red: { bg: "#D7242A", fg: "#fff" },
+  Green: { bg: "#8AAD36", fg: "#fff" },
+  Blue: { bg: "#40679A", fg: "#fff" },
+};
+
 // ─── Generic color-name splitter ─────────────────────────────────────────────
 
 function splitColorLines(
@@ -395,6 +404,18 @@ export function getLineBadges(
       return lineStr
         ? splitColorLines(lineStr, martaLineColors)
         : [{ label: "MARTA", bg: "#CE8B3A", fg: "#fff" }];
+    }
+    
+    case "rta": {
+      const badges: LineBadge[] = [];
+      if (lineStr.includes("Waterfront")) {
+        badges.push({ label: "Waterfront", bg: "#3272B3", bg2: "#8FB63B", fg: "#fff" });
+      }
+      const remaining = lineStr.replace("Waterfront", "").replace(/^,|,$/g, "").trim();
+      if (remaining) {
+        badges.push(...splitColorLines(remaining, rtaLineColors));
+      }
+      return badges;
     }
 
     default:
