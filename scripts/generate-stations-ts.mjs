@@ -137,7 +137,7 @@ const manual = [
   { name: "Tower City", system: "rta", line: "Red,Green,Blue,Waterfront", opened: "1955-03-15", wiki: "Tower_City_station" },
   { name: "Tri-C–Campus District", system: "rta", line: "Red,Green,Blue", opened: "1930-07-20", wiki: "Tri-C–Campus_District_station" },
   { name: "East 55th", system: "rta", line: "Red,Green,Blue", opened: "1920-04-11", wiki: "East_55th_station" },
-  { name: "East 79th", system: "rta", line: "Waterfront", opened: "1955-03-15", wiki: "East_79th_station_(GCRTA_Red_Line)" },
+  { name: "East 79th", system: "rta", line: "Red", opened: "1955-03-15", wiki: "East_79th_station_(GCRTA_Red_Line)" },
   { name: "East 105th–Quincy", system: "rta", line: "Red", opened: "1955-03-15", wiki: "East_105th–Quincy_station" },
   { name: "Cedar–University", system: "rta", line: "Red", opened: "1955-03-15", wiki: "Cedar–University_station" },
   // { name: "Euclid–East 120th", system: "rta", line: "Red", opened: "1955-03-15", wiki: "Euclid–East_120th_(RTA_Rapid_Transit_station)" },
