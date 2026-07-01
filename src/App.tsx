@@ -340,6 +340,7 @@ function App() {
                   const g = parseInt(hex.substring(2, 4), 16);
                   const b = parseInt(hex.substring(4, 6), 16);
                   const hoverBg = `rgba(${r}, ${g}, ${b}, 0.2)`;
+                  const bgValue = lb.bg2  ? `linear-gradient(to bottom, ${lb.bg} 50%, ${lb.bg2} 50%)` : lb.bg;
 
                   return (
                     <button
@@ -348,8 +349,8 @@ function App() {
                       onClick={() => setSelectedLine(selectedLine === lb.label ? null : lb.label)}
                       style={
                         selectedLine === lb.label
-                          ? { backgroundColor: lb.bg, borderColor: lb.bg, color: lb.fg }
-                          : { borderColor: lb.bg, "--line-hover-bg": hoverBg } as React.CSSProperties
+                          ? { background: bgValue, borderColor: lb.bg, color: lb.fg }
+                          : { borderColor: lb.bg, "--line-hover-bg": bgValue } as React.CSSProperties
                       }
                     >
                       {lb.label}
