@@ -339,7 +339,15 @@ function App() {
                   const r = parseInt(hex.substring(0, 2), 16);
                   const g = parseInt(hex.substring(2, 4), 16);
                   const b = parseInt(hex.substring(4, 6), 16);
-                  const hoverBg = `rgba(${r}, ${g}, ${b}, 0.2)`;
+                  const hoverBg = lb.bg2
+                    ? (() => {
+                        const hex2 = lb.bg2.replace("#", "");
+                        const r2 = parseInt(hex2.substring(0, 2), 16);
+                        const g2 = parseInt(hex2.substring(2, 4), 16);
+                        const b2 = parseInt(hex2.substring(4, 6), 16);
+                        return `linear-gradient(to bottom, rgba(${r}, ${g}, ${b}, 0.2) 50%, rgba(${r2}, ${g2}, ${b2}, 0.2) 50%)`;
+                      })()
+                    : `rgba(${r}, ${g}, ${b}, 0.2)`;
                   const bgValue = lb.bg2  ? `linear-gradient(to bottom, ${lb.bg} 50%, ${lb.bg2} 50%)` : lb.bg;
 
                   return (
@@ -350,7 +358,7 @@ function App() {
                       style={
                         selectedLine === lb.label
                           ? { background: bgValue, borderColor: lb.bg, color: lb.fg }
-                          : { borderColor: lb.bg, "--line-hover-bg": bgValue } as React.CSSProperties
+                          : { borderColor: lb.bg, "--line-hover-bg": hoverBg } as React.CSSProperties
                       }
                     >
                       {lb.label}
