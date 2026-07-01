@@ -279,13 +279,6 @@ const rtaLineColors: Record<string, { bg: string; fg: string }> = {
   Blue: { bg: "#40679A", fg: "#fff" },
 };
 
-case "rta": {
-  if (lineStr.includes("Waterfront")) {
-    return [{ label: "Waterfront", bg: "#40679A", bg2: "#8AAD36", fg: "#fff" }];
-  }
-  return splitColorLines(lineStr, rtaLineColors);
-}
-
 // ─── Generic color-name splitter ─────────────────────────────────────────────
 
 function splitColorLines(
@@ -413,8 +406,17 @@ export function getLineBadges(
         : [{ label: "MARTA", bg: "#CE8B3A", fg: "#fff" }];
     }
     
-    case "rta":
-      return splitColorLines(lineStr, rtaLineColors);
+    case "rta": {
+      const badges: LineBadge[] = [];
+      if (lineStr.includes("Waterfront")) {
+        badges.push({ label: "Waterfront", bg: "#3272B3", bg2: "#8FB63B", fg: "#fff" });
+      }
+      const remaining = lineStr.replace("Waterfront", "").replace(/^,|,$/g, "").trim();
+      if (remaining) {
+        badges.push(...splitColorLines(remaining, rtaLineColors));
+      }
+      return badges;
+    }
 
     default:
       return lineStr
