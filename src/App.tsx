@@ -13,6 +13,7 @@ import HeroBackground from "./HeroBackground";
 import { getLineBadges, getAllLinesForSystem, stationHasLine } from "./data/lines";
 import wikipediaW from "./assets/wikipedia-w.svg";
 import "./App.css";
+import { usePostHog } from "@posthog/react";
 
 function LineBadges({ system, line, stationName, routes }: { system: string; line: string; stationName: string; routes?: string }) {
   const badges = getLineBadges(system, line, stationName, routes);
@@ -70,6 +71,7 @@ function stationMapUrl(station: Station): string {
 }
 
 function StationCard({ station }: { station: Station }) {
+  const posthog = usePostHog();
   const age = getAge(station.opened);
   const sys = systems[station.system];
   const opened = new Date(station.opened);
@@ -101,6 +103,13 @@ function StationCard({ station }: { station: Station }) {
           rel="noopener noreferrer"
           title="Wikipedia"
           className="station-link"
+          onClick={() =>
+            posthog?.capture("station_wiki_link_clicked", {
+              station_name: station.name,
+              transit_system: station.system,
+              station_age_years: age,
+            })
+          }
         >
           <img src={wikipediaW} alt="Wikipedia" width="14" height="14" />
         </a>
@@ -110,6 +119,13 @@ function StationCard({ station }: { station: Station }) {
           rel="noopener noreferrer"
           title="View on map"
           className="station-link"
+          onClick={() =>
+            posthog?.capture("station_map_link_clicked", {
+              station_name: station.name,
+              transit_system: station.system,
+              station_age_years: age,
+            })
+          }
         >
           <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
@@ -146,6 +162,7 @@ function BirthdaySection({
 type View = "today" | "browse" | "calendar";
 
 function App() {
+  const posthog = usePostHog();
   const [view, setView] = useState<View>("today");
   const [selectedSystem, setSelectedSystem] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -228,19 +245,28 @@ function App() {
         <nav className="nav">
           <button
             className={view === "today" ? "active" : ""}
-            onClick={() => setView("today")}
+            onClick={() => {
+              setView("today");
+              posthog?.capture("tab_switched", { tab: "today" });
+            }}
           >
             Today
           </button>
           <button
             className={view === "browse" ? "active" : ""}
-            onClick={() => setView("browse")}
+            onClick={() => {
+              setView("browse");
+              posthog?.capture("tab_switched", { tab: "browse" });
+            }}
           >
             Browse
           </button>
           <button
             className={view === "calendar" ? "active" : ""}
-            onClick={() => setView("calendar")}
+            onClick={() => {
+              setView("calendar");
+              posthog?.capture("tab_switched", { tab: "calendar" });
+            }}
           >
             Calendar
           </button>
@@ -307,7 +333,11 @@ function App() {
             <div className="system-filter">
               <button
                 className={selectedSystem === null ? "active" : ""}
-                onClick={() => { setSelectedSystem(null); setSelectedLine(null); }}
+                onClick={() => {
+                  setSelectedSystem(null);
+                  setSelectedLine(null);
+                  posthog?.capture("system_filter_selected", { transit_system: null });
+                }}
               >
                 All Systems
               </button>
@@ -315,7 +345,11 @@ function App() {
                 <button
                   key={id}
                   className={selectedSystem === id ? "active" : ""}
-                  onClick={() => { setSelectedSystem(id); setSelectedLine(null); }}
+                  onClick={() => {
+                    setSelectedSystem(id);
+                    setSelectedLine(null);
+                    posthog?.capture("system_filter_selected", { transit_system: id, system_name: sys.name });
+                  }}
                   style={
                     selectedSystem === id
                       ? { backgroundColor: sys.color, borderColor: sys.color }
@@ -331,7 +365,10 @@ function App() {
               <div className="line-filter">
                 <button
                   className={selectedLine === null ? "active" : ""}
-                  onClick={() => setSelectedLine(null)}
+                  onClick={() => {
+                    setSelectedLine(null);
+                    posthog?.capture("line_filter_selected", { line: null, transit_system: selectedSystem });
+                  }}
                 >
                   All Lines
                 </button>
@@ -356,7 +393,11 @@ function App() {
                     <button
                       key={lb.label}
                       className={`line-filter-btn${selectedLine === lb.label ? " active" : ""}`}
-                      onClick={() => setSelectedLine(selectedLine === lb.label ? null : lb.label)}
+                      onClick={() => {
+                        const newLine = selectedLine === lb.label ? null : lb.label;
+                        setSelectedLine(newLine);
+                        posthog?.capture("line_filter_selected", { line: newLine, transit_system: selectedSystem });
+                      }}
                       style={
                         selectedLine === lb.label
                           ? { background: bgValue, borderColor: lb.bg, color: lb.fg }
@@ -376,20 +417,33 @@ function App() {
                 className="search-input"
                 placeholder="Search stations..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  if (e.target.value.trim().length >= 3) {
+                    posthog?.capture("station_searched", { query: e.target.value.trim(), transit_system: selectedSystem });
+                  }
+                }}
               />
               <div className="sort-controls">
                 <select
                   className="sort-select"
                   value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value as "name" | "age")}
+                  onChange={(e) => {
+                    const newSortBy = e.target.value as "name" | "age";
+                    setSortBy(newSortBy);
+                    posthog?.capture("sort_changed", { sort_by: newSortBy, sort_direction: sortDir });
+                  }}
                 >
                   <option value="name">Name</option>
                   <option value="age">Age</option>
                 </select>
                 <button
                   className="sort-dir-btn"
-                  onClick={() => setSortDir((d) => (d === "asc" ? "desc" : "asc"))}
+                  onClick={() => {
+                    const newDir = sortDir === "asc" ? "desc" : "asc";
+                    setSortDir(() => newDir);
+                    posthog?.capture("sort_changed", { sort_by: sortBy, sort_direction: newDir });
+                  }}
                   title={sortDir === "asc" ? "Ascending" : "Descending"}
                 >
                   {sortDir === "asc" ? "↑" : "↓"}

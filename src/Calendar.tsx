@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { stations, systems, getAge, type Station } from "./data/stations";
 import { getLineBadges } from "./data/lines";
+import { usePostHog } from "@posthog/react";
 
 const MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -119,6 +120,7 @@ function DayDetail({
 }
 
 export default function Calendar() {
+  const posthog = usePostHog();
   const now = new Date();
   const [selectedMonth, setSelectedMonth] = useState(now.getMonth() + 1);
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
@@ -152,13 +154,17 @@ export default function Calendar() {
   const todayDay = now.getDate();
 
   function prevMonth() {
-    setSelectedMonth((m) => (m === 1 ? 12 : m - 1));
+    const newMonth = selectedMonth === 1 ? 12 : selectedMonth - 1;
+    setSelectedMonth(newMonth);
     setSelectedDay(null);
+    posthog?.capture("calendar_month_changed", { month: MONTHS[newMonth - 1], direction: "prev" });
   }
 
   function nextMonth() {
-    setSelectedMonth((m) => (m === 12 ? 1 : m + 1));
+    const newMonth = selectedMonth === 12 ? 1 : selectedMonth + 1;
+    setSelectedMonth(newMonth);
     setSelectedDay(null);
+    posthog?.capture("calendar_month_changed", { month: MONTHS[newMonth - 1], direction: "next" });
   }
 
   return (
@@ -195,7 +201,14 @@ export default function Calendar() {
             <div
               key={day}
               className={`calendar-cell${count > 0 ? " has-birthdays" : ""}${isToday ? " is-today" : ""}${selectedDay === day ? " selected" : ""}`}
-              onClick={count > 0 ? () => setSelectedDay(day) : undefined}
+              onClick={count > 0 ? () => {
+                setSelectedDay(day);
+                posthog?.capture("calendar_day_selected", {
+                  month: MONTHS[selectedMonth - 1],
+                  day,
+                  station_count: count,
+                });
+              } : undefined}
               style={
                 count > 0
                   ? {

@@ -38,6 +38,7 @@ MBTA and SEPTA opening dates are not available in their respective Wikipedia lis
 
 ```sh
 npm install
+cp .env.example .env.local  # then fill in your PostHog project token
 npm run dev        # Start dev server at localhost:5173
 npm run build      # Type-check and build for production
 ```
