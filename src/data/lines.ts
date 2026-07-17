@@ -12,7 +12,7 @@
 export interface LineBadge {
    label: string;
    bg: string;
-   bg2?: string; // optional second color for split/two-tone badges (e.g. RTA Waterfront)
+   bg2?: string; // optional second color for split/two-tone badges (e.g. GCRTA Waterfront)
    fg: string;
  }
 
@@ -271,9 +271,9 @@ const martaStationLines: Record<string, string[]> = {
   "West Lake": ["Green"],
 };
 
-// ─── RTA  ────────────────────────────────────────────────────────────────────
+// ─── GCRTA ───────────────────────────────────────────────────────────────────
 
-const rtaLineColors: Record<string, { bg: string; fg: string }> = {
+const gcrtaLineColors: Record<string, { bg: string; fg: string }> = {
   Red: { bg: "#D7242A", fg: "#fff" },
   Green: { bg: "#8AAD36", fg: "#fff" },
   Blue: { bg: "#40679A", fg: "#fff" },
@@ -406,14 +406,14 @@ export function getLineBadges(
         : [{ label: "MARTA", bg: "#CE8B3A", fg: "#fff" }];
     }
     
-    case "rta": {
+    case "gcrta": {
       const badges: LineBadge[] = [];
       if (lineStr.includes("Waterfront")) {
         badges.push({ label: "Waterfront", bg: "#3272B3", bg2: "#8FB63B", fg: "#fff" });
       }
       const remaining = lineStr.replace("Waterfront", "").replace(/^,|,$/g, "").trim();
       if (remaining) {
-        badges.push(...splitColorLines(remaining, rtaLineColors));
+        badges.push(...splitColorLines(remaining, gcrtaLineColors));
       }
       return badges;
     }
