@@ -4512,5 +4512,481 @@
     "line": "",
     "opened": "1979-12-22",
     "wiki": "West_Lake_station_(MARTA)"
+  },
+  {
+    "name": "Angrignon",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1978-09-03",
+    "wiki": "Angrignon_station"
+  },
+  {
+    "name": "Monk",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1978-09-03",
+    "wiki": "Monk_station"
+  },
+  {
+    "name": "Jolicoeur",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1978-09-03",
+    "wiki": "Jolicoeur_station"
+  },
+  {
+    "name": "Verdun",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1978-09-03",
+    "wiki": "Verdun_station"
+  },
+  {
+    "name": "De l'Église",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1978-09-03",
+    "wiki": "De_l'Église_station"
+  },
+  {
+    "name": "LaSalle",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1978-09-03",
+    "wiki": "LaSalle_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Charlevoix",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1978-09-03",
+    "wiki": "Charlevoix_station_(Montreal)"
+  },
+  {
+    "name": "Lionel-Groulx",
+    "system": "stm",
+    "line": "Green, Orange",
+    "opened": "1978-09-03",
+    "wiki": "Lionel-Groulx_station"
+  },
+  {
+    "name": "Atwater",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1966-10-14",
+    "wiki": "Atwater_station"
+  },
+  {
+    "name": "Guy–Concordia",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1966-10-14",
+    "wiki": "Guy–Concordia_station"
+  },
+  {
+    "name": "Peel",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1966-10-14",
+    "wiki": "Peel_station_(Montreal_Metro)"
+  },
+  {
+    "name": "McGill",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1966-10-14",
+    "wiki": "McGill_station"
+  },
+  {
+    "name": "Place-des-Arts",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1966-10-14",
+    "wiki": "Place-des-Arts_station"
+  },
+  {
+    "name": "Saint-Laurent",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1966-10-14",
+    "wiki": "Saint-Laurent_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Berri–UQAM",
+    "system": "stm",
+    "line": "Green, Orange, Yellow",
+    "opened": "1966-10-14",
+    "wiki": "Berri–UQAM_station"
+  },
+  {
+    "name": "Beaudry",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1966-12-21",
+    "wiki": "Beaudry_station"
+  },
+  {
+    "name": "Papineau",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1966-10-14",
+    "wiki": "Papineau_station"
+  },
+  {
+    "name": "Frontenac",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1966-12-19",
+    "wiki": "Frontenac_station"
+  },
+  {
+    "name": "Préfontaine",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1976-06-06",
+    "wiki": "Préfontaine_station"
+  },
+  {
+    "name": "Joliette",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1976-06-06",
+    "wiki": "Joliette_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Pie-IX",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1976-06-06",
+    "wiki": "Pie-IX_station"
+  },
+  {
+    "name": "Viau",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1976-06-06",
+    "wiki": "Viau_station"
+  },
+  {
+    "name": "Assomption",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1976-06-06",
+    "wiki": "Assomption_station"
+  },
+  {
+    "name": "Cadillac",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1976-06-06",
+    "wiki": "Cadillac_station"
+  },
+  {
+    "name": "Langelier",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1976-06-06",
+    "wiki": "Langelier_station"
+  },
+  {
+    "name": "Radisson",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1976-06-06",
+    "wiki": "Radisson_station"
+  },
+  {
+    "name": "Honoré-Beaugrand",
+    "system": "stm",
+    "line": "Green",
+    "opened": "1976-06-06",
+    "wiki": "Honoré-Beaugrand_station"
+  },
+  {
+    "name": "Côte-Vertu",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1986-11-03",
+    "wiki": "Côte-Vertu_station"
+  },
+  {
+    "name": "Du Collège",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1984-01-09",
+    "wiki": "Du_Collège_station"
+  },
+  {
+    "name": "De la Savane",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1984-01-09",
+    "wiki": "De_la_Savane_station"
+  },
+  {
+    "name": "Namur",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1984-01-09",
+    "wiki": "Namur_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Plamondon",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1982-01-29",
+    "wiki": "Plamondon_station"
+  },
+  {
+    "name": "Côte-Sainte-Catherine",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1982-01-04",
+    "wiki": "Côte-Sainte-Catherine_station"
+  },
+  {
+    "name": "Snowdon",
+    "system": "stm",
+    "line": "Orange, Blue",
+    "opened": "1981-09-07",
+    "wiki": "Snowdon_station"
+  },
+  {
+    "name": "Villa-Maria",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1981-09-07",
+    "wiki": "Villa-Maria_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Vendôme",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1981-09-07",
+    "wiki": "Vendôme_station"
+  },
+  {
+    "name": "Place-Saint-Henri",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1980-04-28",
+    "wiki": "Place-Saint-Henri_station"
+  },
+  {
+    "name": "Georges-Vanier",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1980-04-28",
+    "wiki": "Georges-Vanier_station"
+  },
+  {
+    "name": "Lucien-L'Allier",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1980-04-28",
+    "wiki": "Lucien-L'Allier_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Bonaventure",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1967-02-13",
+    "wiki": "Bonaventure_station"
+  },
+  {
+    "name": "Square-Victoria–OACI",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1967-02-06",
+    "wiki": "Square-Victoria–OACI_station"
+  },
+  {
+    "name": "Place-d'Armes",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Place-d'Armes_station"
+  },
+  {
+    "name": "Champ-de-Mars",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Champ-de-Mars_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Sherbrooke",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Sherbrooke_station"
+  },
+  {
+    "name": "Mont-Royal",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Mont-Royal_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Laurier",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Laurier_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Rosemont",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Rosemont_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Beaubien",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Beaubien_station"
+  },
+  {
+    "name": "Jean-Talon",
+    "system": "stm",
+    "line": "Orange, Blue",
+    "opened": "1966-10-14",
+    "wiki": "Jean-Talon_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Jarry",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Jarry_station"
+  },
+  {
+    "name": "Crémazie",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Crémazie_station"
+  },
+  {
+    "name": "Sauvé",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Sauvé_station"
+  },
+  {
+    "name": "Henri-Bourassa",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "1966-10-14",
+    "wiki": "Henri-Bourassa_station"
+  },
+  {
+    "name": "Cartier",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "2007-04-28",
+    "wiki": "Cartier_station_(Montreal_Metro)"
+  },
+  {
+    "name": "De la Concorde",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "2007-04-28",
+    "wiki": "De_la_Concorde_station"
+  },
+  {
+    "name": "Montmorency",
+    "system": "stm",
+    "line": "Orange",
+    "opened": "2007-04-28",
+    "wiki": "Montmorency_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Jean-Drapeau",
+    "system": "stm",
+    "line": "Yellow",
+    "opened": "1967-04-01",
+    "wiki": "Jean-Drapeau_station"
+  },
+  {
+    "name": "Longueuil–Université-de-Sherbrooke",
+    "system": "stm",
+    "line": "Yellow",
+    "opened": "1967-04-01",
+    "wiki": "Longueuil–Université-de-Sherbrooke_station"
+  },
+  {
+    "name": "Côte-des-Neiges",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1988-01-04",
+    "wiki": "Côte-des-Neiges_station"
+  },
+  {
+    "name": "Université-de-Montréal",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1988-01-04",
+    "wiki": "Université-de-Montréal_station"
+  },
+  {
+    "name": "Édouard-Montpetit",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1988-01-04",
+    "wiki": "Édouard-Montpetit_station"
+  },
+  {
+    "name": "Outremont",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1988-01-04",
+    "wiki": "Outremont_station"
+  },
+  {
+    "name": "Acadie",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1988-03-28",
+    "wiki": "Acadie_station"
+  },
+  {
+    "name": "Parc",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1987-06-15",
+    "wiki": "Parc_station_(Montreal)"
+  },
+  {
+    "name": "De Castelnau",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1986-06-16",
+    "wiki": "De_Castelnau_station"
+  },
+  {
+    "name": "Fabre",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1986-06-16",
+    "wiki": "Fabre_station"
+  },
+  {
+    "name": "D'Iberville",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1986-06-16",
+    "wiki": "D'Iberville_station"
+  },
+  {
+    "name": "Saint-Michel",
+    "system": "stm",
+    "line": "Blue",
+    "opened": "1986-06-16",
+    "wiki": "Saint-Michel_station_(Montreal_Metro)"
   }
 ]
