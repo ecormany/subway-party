@@ -17,6 +17,7 @@ export const systems: Record<string, { name: string; city: string; color: string
   septa: { name: "SEPTA", city: "Philadelphia", color: "#E1251B", emoji: "🔔" },
   marta: { name: "MARTA", city: "Atlanta", color: "#CE8B3A", emoji: "🍑" },
   rta: { name: "RTA", city: "Cleveland", color: "#D7192A", emoji: "🎸" },
+  stm: { name: "Montreal Metro", city: "Montreal", color: "#0085CA", emoji: "🥯" },
 };
 
 export const stations: Station[] = [

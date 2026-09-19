@@ -37,6 +37,14 @@ const SYSTEMS = [
     lineCol: "Lines",
     openedCol: "Opened",
   },
+  {
+    id: "stm",
+    article: "List_of_Montreal_Metro_stations",
+    nameCol: "Name",
+    lineCol: "Line",
+    openedCol: "Opened",
+    lineFromLinkTitles: true,
+  },
 ];
 
 async function fetchWikiHTML(article) {
@@ -66,6 +74,25 @@ function extractTemplateLines(el, $) {
       }
     } catch {}
   });
+  return lineNames.length > 0 ? lineNames.join(", ") : "";
+}
+
+/**
+ * Extract line names from the `title` attribute of links inside a cell.
+ * Used for systems like Montreal, where lines are rendered as icons
+ * (via a template like {{rint|montreal|metro|1}}) linking to an article
+ * titled e.g. "Green Line (Montreal Metro)" — the template params don't
+ * carry the color name directly, but the link title does.
+ */
+function extractLinkTitleLines(el, $) {
+  const lineNames = [];
+  $(el)
+    .find("a[title]")
+    .each((_, a) => {
+      const title = $(a).attr("title") || "";
+      const m = title.match(/^(\w[\w\s]*?)\s+Line\s*\(/);
+      if (m) lineNames.push(m[1].trim());
+    });
   return lineNames.length > 0 ? lineNames.join(", ") : "";
 }
 
@@ -239,6 +266,10 @@ async function scrapeSystem(config) {
       if (config.useTemplateLines && lineIdx >= 0 && row[lineIdx]) {
         const tmplLine = extractTemplateLines(row[lineIdx], $);
         if (tmplLine) line = tmplLine;
+      }
+      if (config.lineFromLinkTitles && lineIdx >= 0 && row[lineIdx]) {
+        const linkLine = extractLinkTitleLines(row[lineIdx], $);
+        if (linkLine) line = linkLine;
       }
       const openedText =  cleanText(row[openedIdx], $);
       const opened = parseDate(openedText);
