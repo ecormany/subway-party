@@ -909,7 +909,12 @@ export function getUpcomingBirthdays(month: number, day: number, withinDays: num
 export function getAge(opened: string): number {
   const now = new Date();
   const d = new Date(opened);
-  return now.getFullYear() - d.getUTCFullYear();
+  let age = now.getFullYear() - d.getUTCFullYear();
+  const monthDiff = now.getMonth() + 1 - (d.getUTCMonth() + 1);
+  if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < d.getUTCDate())) {
+    age--;
+  }
+  return age;
 }
 
 export function getStationsBySystem(systemId: string): Station[] {
