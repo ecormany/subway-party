@@ -479,7 +479,7 @@ function App() {
       <footer>
         <p>
           Subway Party tracks the opening dates of public transit stations
-          across the US.
+          across North America.
         </p>
         <p className="footer-note">
           Data sourced from transit authority records. Some dates are

@@ -279,6 +279,15 @@ const rtaLineColors: Record<string, { bg: string; fg: string }> = {
   Blue: { bg: "#40679A", fg: "#fff" },
 };
 
+// ─── Montreal Metro ──────────────────────────────────────────────────────────
+
+const stmLineColors: Record<string, { bg: string; fg: string }> = {
+  Green: { bg: "#009739", fg: "#fff" },
+  Orange: { bg: "#E87722", fg: "#fff" },
+  Yellow: { bg: "#FFCD00", fg: "#000" },
+  Blue: { bg: "#005EB8", fg: "#fff" },
+};
+
 // ─── Generic color-name splitter ─────────────────────────────────────────────
 
 function splitColorLines(
@@ -417,6 +426,9 @@ export function getLineBadges(
       }
       return badges;
     }
+
+    case "stm":
+      return splitColorLines(lineStr, stmLineColors);
 
     default:
       return lineStr
