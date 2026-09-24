@@ -81,9 +81,9 @@ const manual = [
   { name: "North Philadelphia", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "North_Philadelphia_station_(SEPTA)" },
   { name: "Susquehanna–Dauphin", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "Susquehanna–Dauphin_station" },
   { name: "Cecil B. Moore", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "Cecil_B._Moore_station" },
-  { name: "Girard", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "Girard_station_(Broad_Street_Line)" },
+  { name: "Girard (Broad Street Line)", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "Girard_station_(Broad_Street_Line)" },
   { name: "Fairmount", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "Fairmount_station_(SEPTA)" },
-  { name: "Spring Garden", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "Spring_Garden_station_(Broad_Street_Line)" },
+  { name: "Spring Garden (Broad Street Line)", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "Spring_Garden_station_(Broad_Street_Line)" },
   { name: "Race–Vine", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "Race–Vine_station" },
   { name: "City Hall", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "City_Hall_station_(SEPTA)" },
   { name: "Walnut–Locust", system: "septa", line: "Broad Street", opened: "1928-09-01", wiki: "Walnut–Locust_station" },
@@ -110,8 +110,8 @@ const manual = [
   { name: "8th Street", system: "septa", line: "Market–Frankford", opened: "1907-03-04", wiki: "8th_Street_station_(Market–Frankford_Line)" },
   { name: "5th Street", system: "septa", line: "Market–Frankford", opened: "1907-10-04", wiki: "5th_Street_Independence_Hall_station" },
   { name: "2nd Street", system: "septa", line: "Market–Frankford", opened: "1907-10-04", wiki: "2nd_Street_station_(Market–Frankford_Line)" },
-  { name: "Spring Garden", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "Spring_Garden_station_(Market–Frankford_Line)" },
-  { name: "Girard", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "Girard_station_(Market–Frankford_Line)" },
+  { name: "Spring Garden (Market–Frankford Line)", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "Spring_Garden_station_(Market–Frankford_Line)" },
+  { name: "Girard (Market–Frankford Line)", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "Girard_station_(Market–Frankford_Line)" },
   { name: "Berks", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "Berks_station" },
   { name: "York–Dauphin", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "York–Dauphin_station" },
   { name: "Huntingdon", system: "septa", line: "Market–Frankford", opened: "1922-11-05", wiki: "Huntingdon_station_(SEPTA)" },
@@ -137,7 +137,7 @@ const manual = [
   { name: "Tower City", system: "rta", line: "Red,Green,Blue,Waterfront", opened: "1955-03-15", wiki: "Tower_City_station" },
   { name: "Tri-C–Campus District", system: "rta", line: "Red,Green,Blue", opened: "1930-07-20", wiki: "Tri-C–Campus_District_station" },
   { name: "East 55th", system: "rta", line: "Red,Green,Blue", opened: "1920-04-11", wiki: "East_55th_station" },
-  { name: "East 79th", system: "rta", line: "Red", opened: "1955-03-15", wiki: "East_79th_station_(GCRTA_Red_Line)" },
+  { name: "East 79th (Red Line)", system: "rta", line: "Red", opened: "1955-03-15", wiki: "East_79th_station_(GCRTA_Red_Line)" },
   { name: "East 105th–Quincy", system: "rta", line: "Red", opened: "1955-03-15", wiki: "East_105th–Quincy_station" },
   { name: "Cedar–University", system: "rta", line: "Red", opened: "1955-03-15", wiki: "Cedar–University_station" },
   // { name: "Euclid–East 120th", system: "rta", line: "Red", opened: "1955-03-15", wiki: "Euclid–East_120th_(RTA_Rapid_Transit_station)" },
@@ -150,12 +150,12 @@ const manual = [
   { name: "West 3rd-Stadium", system: "rta", line: "Waterfront", opened: "1999-08-12", wiki: "West_3rd_station" },
   { name: "Flats East Bank", system: "rta", line: "Waterfront", opened: "1996-07-10", wiki: "Flats_East_Bank_station" },
   { name: "Settlers Landing", system: "rta", line: "Waterfront", opened: "1996-07-10", wiki: "Settlers_Landing_station" },
-  { name: "East 79th", system: "rta", line: "Green,Blue", opened: "1920-04-11", wiki: "East_79th_station_(GCRTA_Blue_and_Green_Lines)" },
+  { name: "East 79th (Blue/Green Lines)", system: "rta", line: "Green,Blue", opened: "1920-04-11", wiki: "East_79th_station_(GCRTA_Blue_and_Green_Lines)" },
   { name: "Buckeye-Woodhill", system: "rta", line: "Green,Blue", opened: "1920-04-11", wiki: "Buckeye–Woodhill_station" },
   { name: "East 116th–St. Luke's", system: "rta", line: "Green,Blue", opened: "1920-04-11", wiki: "East_116th–St._Luke%27s_station" },
   { name: "Shaker Square", system: "rta", line: "Green,Blue", opened: "1920-04-11", wiki: "Shaker_Square_station" },
   { name: "Coventry", system: "rta", line: "Green", opened: "1913-12-17", wiki: "Coventry_station_(GCRTA)" },
-  { name: "Southington", system: "rta", line: "Green", opened: "1913-12-17", wiki: "Southington_station_(GCRTA)" },
+  { name: "Southington (Green Line)", system: "rta", line: "Green", opened: "1913-12-17", wiki: "Southington_station_(GCRTA)" },
   { name: "South Park", system: "rta", line: "Green", opened: "1913-12-17", wiki: "South_Park_station_(GCRTA)" },
   { name: "Lee–Shaker", system: "rta", line: "Green", opened: "1913-12-17", wiki: "Lee_–_Shaker_(RTA_Rapid_Transit_station)" },
   { name: "Attleboro", system: "rta", line: "Green", opened: "1913-12-17", wiki: "Attleboro_station_(GCRTA)" },
@@ -167,7 +167,7 @@ const manual = [
   { name: "Green Road", system: "rta", line: "Green", opened: "1936-11-01", wiki: "Green_Road_station" },
   { name: "Drexmore", system: "rta", line: "Blue", opened: "1948-01-23", wiki: "Drexmore_station" },
   { name: "South Woodland", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "South_Woodland_station" },
-  { name: "Southington", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Southington_station_(GCRTA_Blue_Line)" },
+  { name: "Southington (Blue Line)", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Southington_station_(GCRTA_Blue_Line)" },
   { name: "Onaway", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Onaway_station" },
   { name: "Ashby", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Ashby_station_(GCRTA)" },
   { name: "Lee-Van Aken", system: "rta", line: "Blue", opened: "1920-04-11", wiki: "Lee–Van_Aken_station" },
@@ -219,10 +219,12 @@ const nycComplexes = [
     merge: ["59th Street–Columbus Circle"],
   },
   {
-    name: "149th Street–Grand Concourse",
-    wiki: "149th_Street–Grand_Concourse_(New_York_City_Subway)",
+    // Renamed from 149th Street–Grand Concourse; merge both so old and new
+    // Wikipedia scrapes work.
+    name: "149th Street–Hostos",
+    wiki: "149th_Street–Hostos_station",
     routes: "2,4,5",
-    merge: ["149th Street–Grand Concourse"],
+    merge: ["149th Street–Hostos", "149th Street–Grand Concourse"],
   },
   {
     name: "161st Street–Yankee Stadium",
@@ -282,7 +284,7 @@ const nycComplexes = [
     name: "Court Square–23rd Street",
     wiki: "Court_Square–23rd_Street_station",
     routes: "7,E,F,G",
-    merge: ["Court Square–23rd Street"],
+    merge: ["Court Square–23rd Street", "Court Square"],
   },
   {
     name: "Delancey Street/Essex Street",
@@ -430,6 +432,15 @@ function applyNycComplexes(stations) {
 }
 
 const allStations = applyNycComplexes([...scraped, ...manual]);
+
+// Distinct stations sharing a name collide as React keys and in lookups by
+// name, so give them a disambiguating suffix, e.g. "Girard (Broad Street Line)".
+const seenKeys = new Set();
+for (const s of allStations) {
+  const key = `${s.system}:${s.name}`;
+  if (seenKeys.has(key)) console.error(`Warning: duplicate station ${key}`);
+  seenKeys.add(key);
+}
 
 // Sort by system then by name
 allStations.sort((a, b) => {

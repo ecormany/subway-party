@@ -172,6 +172,11 @@ function App() {
   const now = new Date();
   const month = now.getMonth() + 1;
   const day = now.getDate();
+  const todayFormatted = now.toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  });
 
   const todaysBirthdays = useMemo(
     () => getTodaysBirthdays(month, day),
@@ -224,13 +229,6 @@ function App() {
     if (sortDir === "desc") sorted.reverse();
     return sorted;
   }, [systemStations, selectedLine, selectedSystem, searchQuery, sortBy, sortDir]);
-
-
-  const todayFormatted = now.toLocaleDateString("en-US", {
-    weekday: "long",
-    month: "long",
-    day: "numeric",
-  });
 
   return (
     <div className="app">

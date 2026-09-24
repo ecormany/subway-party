@@ -17,6 +17,7 @@ This is a good vibes Claude Code repo, have fun! 😎
 - **SEPTA / Philadelphia** (51 stations, since 1907)
 - **BART / San Francisco** (50 stations, since 1972)
 - **MARTA / Atlanta** (38 stations, since 1979)
+- **RTA / Cleveland** (50 stations, since 1913)
 - **Montreal Metro** (68 stations, since 1966)
 
 ## Features
@@ -33,7 +34,7 @@ This is a good vibes Claude Code repo, have fun! 😎
 
 Station data is primarily scraped from Wikipedia list articles using the scripts in `scripts/`. The scraper extracts station names, lines, opening dates, and Wikipedia article links from wikitables. A second pass fetches geographic coordinates from the Wikipedia API for direct map links.
 
-MBTA and SEPTA opening dates are not available in their respective Wikipedia list tables, so those stations are maintained manually in `scripts/generate-stations-ts.mjs`.
+MBTA, SEPTA, and RTA opening dates are not available in their respective Wikipedia list tables, so those stations are maintained manually in `scripts/generate-stations-ts.mjs`.
 
 ## Development
 
