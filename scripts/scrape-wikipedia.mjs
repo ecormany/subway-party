@@ -45,6 +45,15 @@ const SYSTEMS = [
     openedCol: "Opened",
     lineFromLinkTitles: true,
   },
+  {
+    id: "lu",
+    article: "List_of_London_Underground_stations",
+    nameCol: "Station",
+    lineCol: "Line",
+    openedCol: "Opened",
+    linkLines: true,
+    disambiguateByWiki: true,
+  },
 ];
 
 async function fetchWikiHTML(article) {
@@ -94,6 +103,21 @@ function extractLinkTitleLines(el, $) {
       if (m) lineNames.push(m[1].trim());
     });
   return lineNames.length > 0 ? lineNames.join(", ") : "";
+}
+
+/**
+ * Extract line names from the links in a cell, one per line. Used for London
+ * Underground, where lines are a mix of <li> lists and <br>-separated links,
+ * so plain text extraction runs them together ("DistrictPiccadilly").
+ */
+function extractLinkLines(el, $) {
+  $(el).find("sup").remove();
+  return $(el)
+    .find("a")
+    .toArray()
+    .map((a) => cleanText(a, $))
+    .filter(Boolean)
+    .join(", ");
 }
 
 function cleanText(el, $) {
@@ -271,6 +295,11 @@ async function scrapeSystem(config) {
         const linkLine = extractLinkTitleLines(row[lineIdx], $);
         if (linkLine) line = linkLine;
       }
+      // For systems with one link per line in the cell (e.g. London Underground)
+      if (config.linkLines && lineIdx >= 0 && row[lineIdx]) {
+        const linkLine = extractLinkLines(row[lineIdx], $);
+        if (linkLine) line = linkLine;
+      }
       const openedText =  cleanText(row[openedIdx], $);
       const opened = parseDate(openedText);
 
@@ -288,6 +317,20 @@ async function scrapeSystem(config) {
       const entry = { name, system: config.id, line, opened };
       if (wiki) entry.wiki = decodeURIComponent(wiki);
       stations.push(entry);
+    }
+  }
+
+  // Some systems list distinct stations that share a name (e.g. London's two
+  // Edgware Road stations). Tell them apart using the Wikipedia article's
+  // parenthetical, e.g. "Edgware Road (Bakerloo line)".
+  if (config.disambiguateByWiki) {
+    const counts = {};
+    for (const s of stations) counts[s.name] = (counts[s.name] || 0) + 1;
+    for (const s of stations) {
+      const paren = s.wiki?.match(/_\(([^)]+)\)$/);
+      if (counts[s.name] > 1 && paren) {
+        s.name = `${s.name} (${paren[1].replace(/_/g, " ")})`;
+      }
     }
   }
 
