@@ -51,6 +51,10 @@ Add a config object to the `SYSTEMS` array in [`scripts/scrape-wikipedia.mjs`](.
   openedCol: "Opened",
   useTemplateLines: true, // only if lines are rendered as color-icon templates (e.g. {{Rint|...}})
                            // rather than plain text — see WMATA for an example
+  linkLines: true,         // only if each line is its own link in the cell (lists or <br>-separated),
+                           // which plain text would run together — see London Underground
+  disambiguateByWiki: true, // only if distinct stations share a name; appends the article's
+                            // parenthetical, e.g. "Edgware Road (Bakerloo line)"
 }
 ```
 
@@ -60,6 +64,7 @@ Notes on the scraper:
 - Rows whose "Opened" text contains "under construction", "planned", or "tbd" are dropped automatically (future stations).
 - `parseDate()` handles "Month Day, Year", "Day Month Year", and bare-year formats. If a system's date format doesn't parse, either extend `parseDate()` or fall back to Path B for that system.
 - The Wikipedia article link in the name cell becomes `wiki` (used for the article link and for coordinate lookup).
+- The final dedupe is by `name+system`, so same-named stations are silently dropped unless you set `disambiguateByWiki`. Compare the `Found N stations` log line against the unique count you expect.
 
 Run it and check the output looks right before wiring it into the generator:
 

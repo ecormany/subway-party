@@ -447,7 +447,7 @@ async function fetchCoordinates(stations) {
     if (i > 0) await new Promise((r) => setTimeout(r, 1500));
     const batch = wikiStations.slice(i, i + batchSize);
     const titles = batch.map((s) => s.wiki).join("|");
-    const url = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(titles)}&prop=coordinates&format=json&redirects=1`;
+    const url = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(titles)}&prop=coordinates&colimit=max&format=json&redirects=1`;
     try {
       const res = await fetch(url, {
         headers: { "User-Agent": "SubwayParty/1.0 (transit birthday tracker; ecormany@gmail.com)" },
@@ -515,6 +515,7 @@ export const systems: Record<string, { name: string; city: string; color: string
   marta: { name: "MARTA", city: "Atlanta", color: "#CE8B3A", emoji: "🍑" },
   rta: { name: "RTA", city: "Cleveland", color: "#D7192A", emoji: "🎸" },
   stm: { name: "Montreal Metro", city: "Montreal", color: "#0085CA", emoji: "🥯" },
+  lu: { name: "London Underground", city: "London", color: "#DC241F", emoji: "💂" },
 };
 
 export const stations: Station[] = [`);

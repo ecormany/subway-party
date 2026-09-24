@@ -288,6 +288,29 @@ const stmLineColors: Record<string, { bg: string; fg: string }> = {
   Blue: { bg: "#005EB8", fg: "#fff" },
 };
 
+// ─── London Underground ──────────────────────────────────────────────────────
+
+const luLineColors: Record<string, { bg: string; fg: string }> = {
+  Bakerloo: { bg: "#B36305", fg: "#fff" },
+  Central: { bg: "#E32017", fg: "#fff" },
+  Circle: { bg: "#FFD300", fg: "#000" },
+  District: { bg: "#00782A", fg: "#fff" },
+  "Hammersmith & City": { bg: "#F3A9BB", fg: "#000" },
+  Jubilee: { bg: "#A0A5A9", fg: "#000" },
+  Metropolitan: { bg: "#9B0056", fg: "#fff" },
+  Northern: { bg: "#000000", fg: "#fff" },
+  Piccadilly: { bg: "#003688", fg: "#fff" },
+  Victoria: { bg: "#0098D4", fg: "#fff" },
+  "Waterloo & City": { bg: "#95CDBA", fg: "#000" },
+};
+
+/** Wikipedia abbreviates a few line names in its station table. */
+const luLineAbbreviations: Record<string, string> = {
+  "Met.": "Metropolitan",
+  "H&C": "Hammersmith & City",
+  "W&C": "Waterloo & City",
+};
+
 // ─── Generic color-name splitter ─────────────────────────────────────────────
 
 function splitColorLines(
@@ -429,6 +452,13 @@ export function getLineBadges(
 
     case "stm":
       return splitColorLines(lineStr, stmLineColors);
+    case "lu": {
+      const expanded = lineStr
+        .split(",")
+        .map((l) => luLineAbbreviations[l.trim()] ?? l.trim())
+        .join(", ");
+      return splitColorLines(expanded, luLineColors);
+    }
 
     default:
       return lineStr

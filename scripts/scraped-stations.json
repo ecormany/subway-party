@@ -4988,5 +4988,1909 @@
     "line": "Blue",
     "opened": "1986-06-16",
     "wiki": "Saint-Michel_station_(Montreal_Metro)"
+  },
+  {
+    "name": "Acton Town",
+    "system": "lu",
+    "line": "District, Piccadilly",
+    "opened": "1879-07-01",
+    "wiki": "Acton_Town_tube_station"
+  },
+  {
+    "name": "Aldgate",
+    "system": "lu",
+    "line": "Met., Circle",
+    "opened": "1876-11-18",
+    "wiki": "Aldgate_tube_station"
+  },
+  {
+    "name": "Aldgate East",
+    "system": "lu",
+    "line": "H&C, District",
+    "opened": "1884-10-06",
+    "wiki": "Aldgate_East_tube_station"
+  },
+  {
+    "name": "Alperton",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1903-06-28",
+    "wiki": "Alperton_tube_station"
+  },
+  {
+    "name": "Amersham",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1892-09-01",
+    "wiki": "Amersham_station"
+  },
+  {
+    "name": "Angel",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1901-11-17",
+    "wiki": "Angel_tube_station"
+  },
+  {
+    "name": "Archway",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Archway_tube_station"
+  },
+  {
+    "name": "Arnos Grove",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1932-09-19",
+    "wiki": "Arnos_Grove_tube_station"
+  },
+  {
+    "name": "Arsenal",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1906-12-15",
+    "wiki": "Arsenal_tube_station"
+  },
+  {
+    "name": "Baker Street",
+    "system": "lu",
+    "line": "Met., Bakerloo, Circle, Jubilee, H&C",
+    "opened": "1863-01-10",
+    "wiki": "Baker_Street_tube_station"
+  },
+  {
+    "name": "Balham",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1926-12-06",
+    "wiki": "Balham_station#London_Underground_station"
+  },
+  {
+    "name": "Bank",
+    "system": "lu",
+    "line": "W&C, Northern, Central",
+    "opened": "1898-08-08",
+    "wiki": "Bank_and_Monument_stations"
+  },
+  {
+    "name": "Barbican",
+    "system": "lu",
+    "line": "Met., Circle, H&C",
+    "opened": "1865-12-23",
+    "wiki": "Barbican_tube_station"
+  },
+  {
+    "name": "Barking",
+    "system": "lu",
+    "line": "District, H&C",
+    "opened": "1902-06-02",
+    "wiki": "Barking_station"
+  },
+  {
+    "name": "Barkingside",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-05-31",
+    "wiki": "Barkingside_tube_station"
+  },
+  {
+    "name": "Barons Court",
+    "system": "lu",
+    "line": "District, Piccadilly",
+    "opened": "1905-10-09",
+    "wiki": "Barons_Court_tube_station"
+  },
+  {
+    "name": "Battersea Power Station",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "2021-09-20",
+    "wiki": "Battersea_Power_Station_tube_station"
+  },
+  {
+    "name": "Bayswater",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1868-10-01",
+    "wiki": "Bayswater_tube_station"
+  },
+  {
+    "name": "Becontree",
+    "system": "lu",
+    "line": "District",
+    "opened": "1932-07-18",
+    "wiki": "Becontree_tube_station"
+  },
+  {
+    "name": "Belsize Park",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Belsize_Park_tube_station"
+  },
+  {
+    "name": "Bermondsey",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1999-09-17",
+    "wiki": "Bermondsey_tube_station"
+  },
+  {
+    "name": "Bethnal Green",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1946-12-04",
+    "wiki": "Bethnal_Green_tube_station"
+  },
+  {
+    "name": "Blackfriars",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1870-05-30",
+    "wiki": "Blackfriars_station#London_Underground"
+  },
+  {
+    "name": "Blackhorse Road",
+    "system": "lu",
+    "line": "Victoria",
+    "opened": "1968-09-01",
+    "wiki": "Blackhorse_Road_station"
+  },
+  {
+    "name": "Bond Street",
+    "system": "lu",
+    "line": "Central, Jubilee",
+    "opened": "1900-09-24",
+    "wiki": "Bond_Street_tube_station"
+  },
+  {
+    "name": "Borough",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1890-12-18",
+    "wiki": "Borough_tube_station"
+  },
+  {
+    "name": "Boston Manor",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1883-05-01",
+    "wiki": "Boston_Manor_tube_station"
+  },
+  {
+    "name": "Bounds Green",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1932-09-19",
+    "wiki": "Bounds_Green_tube_station"
+  },
+  {
+    "name": "Bow Road",
+    "system": "lu",
+    "line": "District, H&C",
+    "opened": "1902-06-11",
+    "wiki": "Bow_Road_tube_station"
+  },
+  {
+    "name": "Brent Cross",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1923-11-19",
+    "wiki": "Brent_Cross_tube_station"
+  },
+  {
+    "name": "Brixton",
+    "system": "lu",
+    "line": "Victoria",
+    "opened": "1971-07-23",
+    "wiki": "Brixton_tube_station"
+  },
+  {
+    "name": "Bromley-by-Bow",
+    "system": "lu",
+    "line": "District, H&C",
+    "opened": "1902-06-02",
+    "wiki": "Bromley-by-Bow_tube_station"
+  },
+  {
+    "name": "Buckhurst Hill",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-11-21",
+    "wiki": "Buckhurst_Hill_tube_station"
+  },
+  {
+    "name": "Burnt Oak",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1924-10-27",
+    "wiki": "Burnt_Oak_tube_station"
+  },
+  {
+    "name": "Caledonian Road",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1906-12-15",
+    "wiki": "Caledonian_Road_tube_station"
+  },
+  {
+    "name": "Camden Town",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Camden_Town_tube_station"
+  },
+  {
+    "name": "Canada Water",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1999-09-17",
+    "wiki": "Canada_Water_station"
+  },
+  {
+    "name": "Canary Wharf",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1999-09-17",
+    "wiki": "Canary_Wharf_tube_station"
+  },
+  {
+    "name": "Canning Town",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1999-05-14",
+    "wiki": "Canning_Town_station"
+  },
+  {
+    "name": "Cannon Street",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1884-10-06",
+    "wiki": "Cannon_Street_station#London_Underground"
+  },
+  {
+    "name": "Canons Park",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1932-12-10",
+    "wiki": "Canons_Park_tube_station"
+  },
+  {
+    "name": "Chalfont & Latimer",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1889-07-08",
+    "wiki": "Chalfont_&_Latimer_station"
+  },
+  {
+    "name": "Chalk Farm",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Chalk_Farm_tube_station"
+  },
+  {
+    "name": "Chancery Lane",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1900-07-30",
+    "wiki": "Chancery_Lane_tube_station"
+  },
+  {
+    "name": "Charing Cross",
+    "system": "lu",
+    "line": "Bakerloo, Northern",
+    "opened": "1906-03-10",
+    "wiki": "Charing_Cross_tube_station"
+  },
+  {
+    "name": "Chesham",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1889-07-08",
+    "wiki": "Chesham_tube_station"
+  },
+  {
+    "name": "Chigwell",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-11-21",
+    "wiki": "Chigwell_tube_station"
+  },
+  {
+    "name": "Chiswick Park",
+    "system": "lu",
+    "line": "District",
+    "opened": "1879-07-01",
+    "wiki": "Chiswick_Park_tube_station"
+  },
+  {
+    "name": "Chorleywood",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1889-07-08",
+    "wiki": "Chorleywood_station"
+  },
+  {
+    "name": "Clapham Common",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1900-06-03",
+    "wiki": "Clapham_Common_tube_station"
+  },
+  {
+    "name": "Clapham North",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1900-06-03",
+    "wiki": "Clapham_North_tube_station"
+  },
+  {
+    "name": "Clapham South",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1926-09-13",
+    "wiki": "Clapham_South_tube_station"
+  },
+  {
+    "name": "Cockfosters",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1933-07-31",
+    "wiki": "Cockfosters_tube_station"
+  },
+  {
+    "name": "Colindale",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1924-08-18",
+    "wiki": "Colindale_tube_station"
+  },
+  {
+    "name": "Colliers Wood",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1926-09-13",
+    "wiki": "Colliers_Wood_tube_station"
+  },
+  {
+    "name": "Covent Garden",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1907-04-11",
+    "wiki": "Covent_Garden_tube_station"
+  },
+  {
+    "name": "Croxley",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1925-11-02",
+    "wiki": "Croxley_tube_station"
+  },
+  {
+    "name": "Dagenham East",
+    "system": "lu",
+    "line": "District",
+    "opened": "1902-06-02",
+    "wiki": "Dagenham_East_tube_station"
+  },
+  {
+    "name": "Dagenham Heathway",
+    "system": "lu",
+    "line": "District",
+    "opened": "1932-09-12",
+    "wiki": "Dagenham_Heathway_tube_station"
+  },
+  {
+    "name": "Debden",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1949-09-25",
+    "wiki": "Debden_tube_station"
+  },
+  {
+    "name": "Dollis Hill",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1909-10-01",
+    "wiki": "Dollis_Hill_tube_station"
+  },
+  {
+    "name": "Ealing Broadway",
+    "system": "lu",
+    "line": "District, Central",
+    "opened": "1879-07-01",
+    "wiki": "Ealing_Broadway_station"
+  },
+  {
+    "name": "Ealing Common",
+    "system": "lu",
+    "line": "District, Piccadilly",
+    "opened": "1879-07-01",
+    "wiki": "Ealing_Common_tube_station"
+  },
+  {
+    "name": "Earl's Court",
+    "system": "lu",
+    "line": "District, Piccadilly",
+    "opened": "1871-10-30",
+    "wiki": "Earl's_Court_tube_station"
+  },
+  {
+    "name": "East Acton",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1920-08-03",
+    "wiki": "East_Acton_tube_station"
+  },
+  {
+    "name": "East Finchley",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1939-07-03",
+    "wiki": "East_Finchley_tube_station"
+  },
+  {
+    "name": "East Ham",
+    "system": "lu",
+    "line": "District, H&C",
+    "opened": "1902-06-02",
+    "wiki": "East_Ham_tube_station"
+  },
+  {
+    "name": "East Putney",
+    "system": "lu",
+    "line": "District",
+    "opened": "1889-06-03",
+    "wiki": "East_Putney_tube_station"
+  },
+  {
+    "name": "Eastcote",
+    "system": "lu",
+    "line": "Met., Piccadilly",
+    "opened": "1906-05-26",
+    "wiki": "Eastcote_tube_station"
+  },
+  {
+    "name": "Edgware",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1924-08-18",
+    "wiki": "Edgware_tube_station"
+  },
+  {
+    "name": "Edgware Road (Bakerloo line)",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1907-06-15",
+    "wiki": "Edgware_Road_tube_station_(Bakerloo_line)"
+  },
+  {
+    "name": "Edgware Road (Circle, District and Hammersmith & City lines)",
+    "system": "lu",
+    "line": "H&C, District, Circle",
+    "opened": "1863-01-10",
+    "wiki": "Edgware_Road_tube_station_(Circle,_District_and_Hammersmith_&_City_lines)"
+  },
+  {
+    "name": "Elephant & Castle",
+    "system": "lu",
+    "line": "Northern, Bakerloo",
+    "opened": "1890-12-18",
+    "wiki": "Elephant_&_Castle_tube_station"
+  },
+  {
+    "name": "Elm Park",
+    "system": "lu",
+    "line": "District",
+    "opened": "1935-05-13",
+    "wiki": "Elm_Park_tube_station"
+  },
+  {
+    "name": "Embankment",
+    "system": "lu",
+    "line": "District, Bakerloo, Northern, Circle",
+    "opened": "1870-05-30",
+    "wiki": "Embankment_tube_station"
+  },
+  {
+    "name": "Epping",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1949-09-25",
+    "wiki": "Epping_tube_station"
+  },
+  {
+    "name": "Euston",
+    "system": "lu",
+    "line": "Northern, Victoria",
+    "opened": "1907-06-22",
+    "wiki": "Euston_tube_station"
+  },
+  {
+    "name": "Euston Square",
+    "system": "lu",
+    "line": "Met., Circle, H&C",
+    "opened": "1863-01-10",
+    "wiki": "Euston_Square_tube_station"
+  },
+  {
+    "name": "Fairlop",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-05-31",
+    "wiki": "Fairlop_tube_station"
+  },
+  {
+    "name": "Farringdon",
+    "system": "lu",
+    "line": "Met., Circle, H&C",
+    "opened": "1863-01-10",
+    "wiki": "Farringdon_station"
+  },
+  {
+    "name": "Finchley Central",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1940-04-14",
+    "wiki": "Finchley_Central_tube_station"
+  },
+  {
+    "name": "Finchley Road",
+    "system": "lu",
+    "line": "Met., Jubilee",
+    "opened": "1879-06-30",
+    "wiki": "Finchley_Road_tube_station"
+  },
+  {
+    "name": "Finsbury Park",
+    "system": "lu",
+    "line": "Piccadilly, Victoria",
+    "opened": "1906-12-15",
+    "wiki": "Finsbury_Park_station#London_Underground"
+  },
+  {
+    "name": "Fulham Broadway",
+    "system": "lu",
+    "line": "District",
+    "opened": "1880-03-01",
+    "wiki": "Fulham_Broadway_tube_station"
+  },
+  {
+    "name": "Gants Hill",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-12-14",
+    "wiki": "Gants_Hill_tube_station"
+  },
+  {
+    "name": "Gloucester Road",
+    "system": "lu",
+    "line": "District, Piccadilly, Circle",
+    "opened": "1868-10-01",
+    "wiki": "Gloucester_Road_tube_station"
+  },
+  {
+    "name": "Golders Green",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Golders_Green_tube_station"
+  },
+  {
+    "name": "Goldhawk Road",
+    "system": "lu",
+    "line": "H&C, Circle",
+    "opened": "1914-04-01",
+    "wiki": "Goldhawk_Road_tube_station"
+  },
+  {
+    "name": "Goodge Street",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Goodge_Street_tube_station"
+  },
+  {
+    "name": "Grange Hill",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-11-21",
+    "wiki": "Grange_Hill_tube_station"
+  },
+  {
+    "name": "Great Portland Street",
+    "system": "lu",
+    "line": "Met., Circle, H&C",
+    "opened": "1863-01-10",
+    "wiki": "Great_Portland_Street_tube_station"
+  },
+  {
+    "name": "Greenford",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-06-30",
+    "wiki": "Greenford_station"
+  },
+  {
+    "name": "Green Park",
+    "system": "lu",
+    "line": "Piccadilly, Victoria, Jubilee",
+    "opened": "1906-12-15",
+    "wiki": "Green_Park_tube_station"
+  },
+  {
+    "name": "Gunnersbury",
+    "system": "lu",
+    "line": "District",
+    "opened": "1877-06-01",
+    "wiki": "Gunnersbury_station"
+  },
+  {
+    "name": "Hainault",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-05-31",
+    "wiki": "Hainault_tube_station"
+  },
+  {
+    "name": "Hammersmith (District and Piccadilly lines)",
+    "system": "lu",
+    "line": "District, Piccadilly",
+    "opened": "1874-09-09",
+    "wiki": "Hammersmith_tube_station_(District_and_Piccadilly_lines)"
+  },
+  {
+    "name": "Hammersmith (Circle and Hammersmith & City lines)",
+    "system": "lu",
+    "line": "H&C, Circle",
+    "opened": "1864-06-13",
+    "wiki": "Hammersmith_tube_station_(Circle_and_Hammersmith_&_City_lines)"
+  },
+  {
+    "name": "Hampstead",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Hampstead_tube_station"
+  },
+  {
+    "name": "Hanger Lane",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-06-30",
+    "wiki": "Hanger_Lane_tube_station"
+  },
+  {
+    "name": "Harlesden",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1917-04-16",
+    "wiki": "Harlesden_station"
+  },
+  {
+    "name": "Harrow & Wealdstone",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1917-04-16",
+    "wiki": "Harrow_&_Wealdstone_station"
+  },
+  {
+    "name": "Harrow-on-the-Hill",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1880-08-02",
+    "wiki": "Harrow-on-the-Hill_station"
+  },
+  {
+    "name": "Hatton Cross",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1975-07-19",
+    "wiki": "Hatton_Cross_tube_station"
+  },
+  {
+    "name": "Heathrow Terminals 2 & 3",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1977-12-16",
+    "wiki": "Heathrow_Terminals_2_&_3_tube_station"
+  },
+  {
+    "name": "Heathrow Terminal 4",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1986-04-12",
+    "wiki": "Heathrow_Terminal_4_tube_station"
+  },
+  {
+    "name": "Heathrow Terminal 5",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "2008-03-27",
+    "wiki": "Heathrow_Terminal_5_station"
+  },
+  {
+    "name": "Hendon Central",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1923-11-19",
+    "wiki": "Hendon_Central_tube_station"
+  },
+  {
+    "name": "High Barnet",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1940-04-14",
+    "wiki": "High_Barnet_tube_station"
+  },
+  {
+    "name": "Highbury & Islington",
+    "system": "lu",
+    "line": "Victoria",
+    "opened": "1968-09-01",
+    "wiki": "Highbury_&_Islington_station"
+  },
+  {
+    "name": "Highgate",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1941-01-19",
+    "wiki": "Highgate_tube_station"
+  },
+  {
+    "name": "High Street Kensington",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1868-10-01",
+    "wiki": "High_Street_Kensington_tube_station"
+  },
+  {
+    "name": "Hillingdon",
+    "system": "lu",
+    "line": "Met., Piccadilly",
+    "opened": "1923-12-10",
+    "wiki": "Hillingdon_tube_station"
+  },
+  {
+    "name": "Holborn",
+    "system": "lu",
+    "line": "Central, Piccadilly",
+    "opened": "1906-12-15",
+    "wiki": "Holborn_tube_station"
+  },
+  {
+    "name": "Holland Park",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1900-07-30",
+    "wiki": "Holland_Park_tube_station"
+  },
+  {
+    "name": "Holloway Road",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1906-12-15",
+    "wiki": "Holloway_Road_tube_station"
+  },
+  {
+    "name": "Hornchurch",
+    "system": "lu",
+    "line": "District",
+    "opened": "1902-06-02",
+    "wiki": "Hornchurch_tube_station"
+  },
+  {
+    "name": "Hounslow Central",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1886-04-01",
+    "wiki": "Hounslow_Central_tube_station"
+  },
+  {
+    "name": "Hounslow East",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1909-05-02",
+    "wiki": "Hounslow_East_tube_station"
+  },
+  {
+    "name": "Hounslow West",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1884-07-21",
+    "wiki": "Hounslow_West_tube_station"
+  },
+  {
+    "name": "Hyde Park Corner",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1906-12-15",
+    "wiki": "Hyde_Park_Corner_tube_station"
+  },
+  {
+    "name": "Ickenham",
+    "system": "lu",
+    "line": "Met., Piccadilly",
+    "opened": "1905-09-25",
+    "wiki": "Ickenham_tube_station"
+  },
+  {
+    "name": "Kennington",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1890-12-18",
+    "wiki": "Kennington_tube_station"
+  },
+  {
+    "name": "Kensal Green",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1916-10-01",
+    "wiki": "Kensal_Green_station"
+  },
+  {
+    "name": "Kensington (Olympia)",
+    "system": "lu",
+    "line": "District",
+    "opened": "1864-07-01",
+    "wiki": "Kensington_(Olympia)_station"
+  },
+  {
+    "name": "Kentish Town",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Kentish_Town_station"
+  },
+  {
+    "name": "Kenton",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1917-04-16",
+    "wiki": "Kenton_station"
+  },
+  {
+    "name": "Kew Gardens",
+    "system": "lu",
+    "line": "District",
+    "opened": "1877-06-01",
+    "wiki": "Kew_Gardens_station_(London)"
+  },
+  {
+    "name": "Kilburn",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1879-11-24",
+    "wiki": "Kilburn_tube_station"
+  },
+  {
+    "name": "Kilburn Park",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1915-01-31",
+    "wiki": "Kilburn_Park_tube_station"
+  },
+  {
+    "name": "Kingsbury",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1932-12-10",
+    "wiki": "Kingsbury_tube_station"
+  },
+  {
+    "name": "King's Cross St Pancras",
+    "system": "lu",
+    "line": "Met., Northern, Piccadilly, Circle, Victoria, H&C",
+    "opened": "1863-01-10",
+    "wiki": "King's_Cross_St_Pancras_tube_station"
+  },
+  {
+    "name": "Knightsbridge",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1906-12-15",
+    "wiki": "Knightsbridge_tube_station"
+  },
+  {
+    "name": "Ladbroke Grove",
+    "system": "lu",
+    "line": "H&C, Circle",
+    "opened": "1864-06-13",
+    "wiki": "Ladbroke_Grove_tube_station"
+  },
+  {
+    "name": "Lambeth North",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1906-03-10",
+    "wiki": "Lambeth_North_tube_station"
+  },
+  {
+    "name": "Lancaster Gate",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1900-07-30",
+    "wiki": "Lancaster_Gate_tube_station"
+  },
+  {
+    "name": "Latimer Road",
+    "system": "lu",
+    "line": "H&C, Circle",
+    "opened": "1868-12-16",
+    "wiki": "Latimer_Road_tube_station"
+  },
+  {
+    "name": "Leicester Square",
+    "system": "lu",
+    "line": "Piccadilly, Northern",
+    "opened": "1906-12-15",
+    "wiki": "Leicester_Square_tube_station"
+  },
+  {
+    "name": "Leyton",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-05-05",
+    "wiki": "Leyton_tube_station"
+  },
+  {
+    "name": "Leytonstone",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-05-05",
+    "wiki": "Leytonstone_tube_station"
+  },
+  {
+    "name": "Liverpool Street",
+    "system": "lu",
+    "line": "Met., Central, Circle, H&C",
+    "opened": "1875-02-01",
+    "wiki": "Liverpool_Street_station#Underground_stations"
+  },
+  {
+    "name": "London Bridge",
+    "system": "lu",
+    "line": "Northern, Jubilee",
+    "opened": "1900-02-25",
+    "wiki": "London_Bridge_station#London_Underground"
+  },
+  {
+    "name": "Loughton",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-11-21",
+    "wiki": "Loughton_tube_station"
+  },
+  {
+    "name": "Maida Vale",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1915-06-06",
+    "wiki": "Maida_Vale_tube_station"
+  },
+  {
+    "name": "Manor House",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1932-09-19",
+    "wiki": "Manor_House_tube_station"
+  },
+  {
+    "name": "Mansion House",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1871-07-03",
+    "wiki": "Mansion_House_tube_station"
+  },
+  {
+    "name": "Marble Arch",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1900-07-30",
+    "wiki": "Marble_Arch_tube_station"
+  },
+  {
+    "name": "Marylebone",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1907-03-27",
+    "wiki": "Marylebone_station#London_Underground"
+  },
+  {
+    "name": "Mile End",
+    "system": "lu",
+    "line": "District, H&C, Central",
+    "opened": "1902-06-02",
+    "wiki": "Mile_End_tube_station"
+  },
+  {
+    "name": "Mill Hill East",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1941-05-18",
+    "wiki": "Mill_Hill_East_tube_station"
+  },
+  {
+    "name": "Monument",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1884-10-06",
+    "wiki": "Bank_and_Monument_stations"
+  },
+  {
+    "name": "Moorgate",
+    "system": "lu",
+    "line": "Met., Northern, Circle, H&C",
+    "opened": "1865-12-23",
+    "wiki": "Moorgate_station"
+  },
+  {
+    "name": "Moor Park",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1910-05-09",
+    "wiki": "Moor_Park_tube_station"
+  },
+  {
+    "name": "Morden",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1926-09-13",
+    "wiki": "Morden_tube_station"
+  },
+  {
+    "name": "Mornington Crescent",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Mornington_Crescent_tube_station"
+  },
+  {
+    "name": "Neasden",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1880-08-02",
+    "wiki": "Neasden_tube_station"
+  },
+  {
+    "name": "Newbury Park",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-12-14",
+    "wiki": "Newbury_Park_tube_station"
+  },
+  {
+    "name": "Nine Elms",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "2021-09-20",
+    "wiki": "Nine_Elms_tube_station"
+  },
+  {
+    "name": "North Acton",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1923-11-05",
+    "wiki": "North_Acton_tube_station"
+  },
+  {
+    "name": "North Ealing",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1903-06-23",
+    "wiki": "North_Ealing_tube_station"
+  },
+  {
+    "name": "North Greenwich",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1999-05-14",
+    "wiki": "North_Greenwich_tube_station"
+  },
+  {
+    "name": "North Harrow",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1915-03-22",
+    "wiki": "North_Harrow_tube_station"
+  },
+  {
+    "name": "North Wembley",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1917-04-16",
+    "wiki": "North_Wembley_station"
+  },
+  {
+    "name": "Northfields",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1908-04-16",
+    "wiki": "Northfields_tube_station"
+  },
+  {
+    "name": "Northolt",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-11-21",
+    "wiki": "Northolt_tube_station"
+  },
+  {
+    "name": "Northwick Park",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1923-06-28",
+    "wiki": "Northwick_Park_tube_station"
+  },
+  {
+    "name": "Northwood",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1887-09-01",
+    "wiki": "Northwood_tube_station"
+  },
+  {
+    "name": "Northwood Hills",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1933-11-13",
+    "wiki": "Northwood_Hills_tube_station"
+  },
+  {
+    "name": "Notting Hill Gate",
+    "system": "lu",
+    "line": "District, Central, Circle",
+    "opened": "1868-10-01",
+    "wiki": "Notting_Hill_Gate_tube_station"
+  },
+  {
+    "name": "Oakwood",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1933-03-13",
+    "wiki": "Oakwood_tube_station"
+  },
+  {
+    "name": "Old Street",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1901-11-17",
+    "wiki": "Old_Street_station"
+  },
+  {
+    "name": "Osterley",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1883-05-01",
+    "wiki": "Osterley_tube_station"
+  },
+  {
+    "name": "Oval",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1890-12-18",
+    "wiki": "Oval_tube_station"
+  },
+  {
+    "name": "Oxford Circus",
+    "system": "lu",
+    "line": "Central, Bakerloo, Victoria",
+    "opened": "1900-07-30",
+    "wiki": "Oxford_Circus_tube_station"
+  },
+  {
+    "name": "Paddington (Bakerloo, Circle and District lines)",
+    "system": "lu",
+    "line": "District, Circle, Bakerloo",
+    "opened": "1868-10-01",
+    "wiki": "Paddington_tube_station_(Bakerloo,_Circle_and_District_lines)"
+  },
+  {
+    "name": "Paddington (Circle and Hammersmith & City lines)",
+    "system": "lu",
+    "line": "H&C, Circle",
+    "opened": "1863-01-10",
+    "wiki": "Paddington_tube_station_(Circle_and_Hammersmith_&_City_lines)"
+  },
+  {
+    "name": "Park Royal",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1903-06-23",
+    "wiki": "Park_Royal_tube_station"
+  },
+  {
+    "name": "Parsons Green",
+    "system": "lu",
+    "line": "District",
+    "opened": "1880-03-01",
+    "wiki": "Parsons_Green_tube_station"
+  },
+  {
+    "name": "Perivale",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-06-30",
+    "wiki": "Perivale_tube_station"
+  },
+  {
+    "name": "Piccadilly Circus",
+    "system": "lu",
+    "line": "Bakerloo, Piccadilly",
+    "opened": "1906-03-10",
+    "wiki": "Piccadilly_Circus_tube_station"
+  },
+  {
+    "name": "Pimlico",
+    "system": "lu",
+    "line": "Victoria",
+    "opened": "1972-09-14",
+    "wiki": "Pimlico_tube_station"
+  },
+  {
+    "name": "Pinner",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1885-05-25",
+    "wiki": "Pinner_tube_station"
+  },
+  {
+    "name": "Plaistow",
+    "system": "lu",
+    "line": "District, H&C",
+    "opened": "1902-06-02",
+    "wiki": "Plaistow_tube_station"
+  },
+  {
+    "name": "Preston Road",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1908-05-21",
+    "wiki": "Preston_Road_tube_station"
+  },
+  {
+    "name": "Putney Bridge",
+    "system": "lu",
+    "line": "District",
+    "opened": "1880-03-01",
+    "wiki": "Putney_Bridge_tube_station"
+  },
+  {
+    "name": "Queen's Park",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1915-02-11",
+    "wiki": "Queen's_Park_(London)_station"
+  },
+  {
+    "name": "Queensbury",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1934-12-16",
+    "wiki": "Queensbury_tube_station"
+  },
+  {
+    "name": "Queensway",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1900-07-30",
+    "wiki": "Queensway_tube_station"
+  },
+  {
+    "name": "Ravenscourt Park",
+    "system": "lu",
+    "line": "District",
+    "opened": "1877-06-01",
+    "wiki": "Ravenscourt_Park_tube_station"
+  },
+  {
+    "name": "Rayners Lane",
+    "system": "lu",
+    "line": "Met., Piccadilly",
+    "opened": "1906-05-26",
+    "wiki": "Rayners_Lane_tube_station"
+  },
+  {
+    "name": "Redbridge",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-12-14",
+    "wiki": "Redbridge_tube_station"
+  },
+  {
+    "name": "Regent's Park",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1906-03-10",
+    "wiki": "Regent's_Park_tube_station"
+  },
+  {
+    "name": "Richmond",
+    "system": "lu",
+    "line": "District",
+    "opened": "1877-06-01",
+    "wiki": "Richmond_station_(London)"
+  },
+  {
+    "name": "Rickmansworth",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1887-09-01",
+    "wiki": "Rickmansworth_station"
+  },
+  {
+    "name": "Roding Valley",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-11-21",
+    "wiki": "Roding_Valley_tube_station"
+  },
+  {
+    "name": "Royal Oak",
+    "system": "lu",
+    "line": "H&C, Circle",
+    "opened": "1871-10-30",
+    "wiki": "Royal_Oak_tube_station"
+  },
+  {
+    "name": "Ruislip",
+    "system": "lu",
+    "line": "Met., Piccadilly",
+    "opened": "1904-07-04",
+    "wiki": "Ruislip_tube_station"
+  },
+  {
+    "name": "Ruislip Gardens",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-11-29",
+    "wiki": "Ruislip_Gardens_tube_station"
+  },
+  {
+    "name": "Ruislip Manor",
+    "system": "lu",
+    "line": "Met., Piccadilly",
+    "opened": "1912-08-05",
+    "wiki": "Ruislip_Manor_tube_station"
+  },
+  {
+    "name": "Russell Square",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1906-12-15",
+    "wiki": "Russell_Square_tube_station"
+  },
+  {
+    "name": "St James's Park",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1868-12-24",
+    "wiki": "St_James's_Park_tube_station"
+  },
+  {
+    "name": "St John's Wood",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1939-11-20",
+    "wiki": "St_John's_Wood_tube_station"
+  },
+  {
+    "name": "St Paul's",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1900-07-30",
+    "wiki": "St_Paul's_tube_station"
+  },
+  {
+    "name": "Seven Sisters",
+    "system": "lu",
+    "line": "Victoria",
+    "opened": "1968-09-01",
+    "wiki": "Seven_Sisters_station"
+  },
+  {
+    "name": "Shepherd's Bush",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1900-07-30",
+    "wiki": "Shepherd's_Bush_tube_station"
+  },
+  {
+    "name": "Shepherd's Bush Market",
+    "system": "lu",
+    "line": "H&C, Circle",
+    "opened": "1864-06-13",
+    "wiki": "Shepherd's_Bush_Market_tube_station"
+  },
+  {
+    "name": "Sloane Square",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1868-12-24",
+    "wiki": "Sloane_Square_tube_station"
+  },
+  {
+    "name": "Snaresbrook",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-12-14",
+    "wiki": "Snaresbrook_tube_station"
+  },
+  {
+    "name": "South Ealing",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1883-05-01",
+    "wiki": "South_Ealing_tube_station"
+  },
+  {
+    "name": "South Harrow",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1903-06-28",
+    "wiki": "South_Harrow_tube_station"
+  },
+  {
+    "name": "South Kensington",
+    "system": "lu",
+    "line": "District, Piccadilly, Circle",
+    "opened": "1868-12-24",
+    "wiki": "South_Kensington_tube_station"
+  },
+  {
+    "name": "South Kenton",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1933-07-03",
+    "wiki": "South_Kenton_station"
+  },
+  {
+    "name": "South Ruislip",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-11-23",
+    "wiki": "South_Ruislip_station"
+  },
+  {
+    "name": "South Wimbledon",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1926-09-13",
+    "wiki": "South_Wimbledon_tube_station"
+  },
+  {
+    "name": "South Woodford",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-12-14",
+    "wiki": "South_Woodford_tube_station"
+  },
+  {
+    "name": "Southfields",
+    "system": "lu",
+    "line": "District",
+    "opened": "1889-06-03",
+    "wiki": "Southfields_tube_station"
+  },
+  {
+    "name": "Southgate",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1933-03-13",
+    "wiki": "Southgate_tube_station"
+  },
+  {
+    "name": "Southwark",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1999-11-20",
+    "wiki": "Southwark_tube_station"
+  },
+  {
+    "name": "Stamford Brook",
+    "system": "lu",
+    "line": "District",
+    "opened": "1912-02-01",
+    "wiki": "Stamford_Brook_tube_station"
+  },
+  {
+    "name": "Stanmore",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1932-12-10",
+    "wiki": "Stanmore_tube_station"
+  },
+  {
+    "name": "Stepney Green",
+    "system": "lu",
+    "line": "District, H&C",
+    "opened": "1902-06-23",
+    "wiki": "Stepney_Green_tube_station"
+  },
+  {
+    "name": "Stockwell",
+    "system": "lu",
+    "line": "Northern, Victoria",
+    "opened": "1890-12-18",
+    "wiki": "Stockwell_tube_station"
+  },
+  {
+    "name": "Stonebridge Park",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1917-04-16",
+    "wiki": "Stonebridge_Park_station"
+  },
+  {
+    "name": "Stratford",
+    "system": "lu",
+    "line": "Central, Jubilee",
+    "opened": "1946-12-04",
+    "wiki": "Stratford_station"
+  },
+  {
+    "name": "Sudbury Hill",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1903-06-28",
+    "wiki": "Sudbury_Hill_tube_station"
+  },
+  {
+    "name": "Sudbury Town",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1903-06-28",
+    "wiki": "Sudbury_Town_tube_station"
+  },
+  {
+    "name": "Swiss Cottage",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1939-11-20",
+    "wiki": "Swiss_Cottage_tube_station"
+  },
+  {
+    "name": "Temple",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1870-05-30",
+    "wiki": "Temple_tube_station"
+  },
+  {
+    "name": "Theydon Bois",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1949-09-25",
+    "wiki": "Theydon_Bois_tube_station"
+  },
+  {
+    "name": "Tooting Bec",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1926-09-13",
+    "wiki": "Tooting_Bec_tube_station"
+  },
+  {
+    "name": "Tooting Broadway",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1926-09-13",
+    "wiki": "Tooting_Broadway_tube_station"
+  },
+  {
+    "name": "Tottenham Court Road",
+    "system": "lu",
+    "line": "Central, Northern",
+    "opened": "1900-07-30",
+    "wiki": "Tottenham_Court_Road_station"
+  },
+  {
+    "name": "Tottenham Hale",
+    "system": "lu",
+    "line": "Victoria",
+    "opened": "1968-09-01",
+    "wiki": "Tottenham_Hale_station"
+  },
+  {
+    "name": "Totteridge & Whetstone",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1940-04-14",
+    "wiki": "Totteridge_&_Whetstone_tube_station"
+  },
+  {
+    "name": "Tower Hill",
+    "system": "lu",
+    "line": "District, Circle",
+    "opened": "1882-09-25",
+    "wiki": "Tower_Hill_tube_station"
+  },
+  {
+    "name": "Tufnell Park",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1907-06-22",
+    "wiki": "Tufnell_Park_tube_station"
+  },
+  {
+    "name": "Turnham Green",
+    "system": "lu",
+    "line": "District, Piccadilly",
+    "opened": "1877-06-01",
+    "wiki": "Turnham_Green_tube_station"
+  },
+  {
+    "name": "Turnpike Lane",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1932-09-19",
+    "wiki": "Turnpike_Lane_tube_station"
+  },
+  {
+    "name": "Upminster",
+    "system": "lu",
+    "line": "District",
+    "opened": "1902-06-02",
+    "wiki": "Upminster_station"
+  },
+  {
+    "name": "Upminster Bridge",
+    "system": "lu",
+    "line": "District",
+    "opened": "1934-12-17",
+    "wiki": "Upminster_Bridge_tube_station"
+  },
+  {
+    "name": "Upney",
+    "system": "lu",
+    "line": "District",
+    "opened": "1932-09-12",
+    "wiki": "Upney_tube_station"
+  },
+  {
+    "name": "Upton Park",
+    "system": "lu",
+    "line": "District, H&C",
+    "opened": "1902-06-02",
+    "wiki": "Upton_Park_tube_station"
+  },
+  {
+    "name": "Uxbridge",
+    "system": "lu",
+    "line": "Met., Piccadilly",
+    "opened": "1904-07-04",
+    "wiki": "Uxbridge_tube_station"
+  },
+  {
+    "name": "Vauxhall",
+    "system": "lu",
+    "line": "Victoria",
+    "opened": "1971-07-23",
+    "wiki": "Vauxhall_station"
+  },
+  {
+    "name": "Victoria",
+    "system": "lu",
+    "line": "District, Circle, Victoria",
+    "opened": "1868-12-24",
+    "wiki": "London_Victoria_station#London_Underground_station"
+  },
+  {
+    "name": "Walthamstow Central",
+    "system": "lu",
+    "line": "Victoria",
+    "opened": "1968-09-01",
+    "wiki": "Walthamstow_Central_station"
+  },
+  {
+    "name": "Wanstead",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-12-14",
+    "wiki": "Wanstead_tube_station"
+  },
+  {
+    "name": "Warren Street",
+    "system": "lu",
+    "line": "Northern, Victoria",
+    "opened": "1907-06-22",
+    "wiki": "Warren_Street_tube_station"
+  },
+  {
+    "name": "Warwick Avenue",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1915-01-31",
+    "wiki": "Warwick_Avenue_tube_station"
+  },
+  {
+    "name": "Waterloo",
+    "system": "lu",
+    "line": "W&C, Bakerloo, Northern, Jubilee",
+    "opened": "1906-03-10",
+    "wiki": "Waterloo_tube_station"
+  },
+  {
+    "name": "Watford",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1925-11-02",
+    "wiki": "Watford_tube_station"
+  },
+  {
+    "name": "Wembley Central",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1917-04-16",
+    "wiki": "Wembley_Central_station"
+  },
+  {
+    "name": "Wembley Park",
+    "system": "lu",
+    "line": "Met., Jubilee",
+    "opened": "1894-05-12",
+    "wiki": "Wembley_Park_tube_station"
+  },
+  {
+    "name": "West Acton",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1923-11-05",
+    "wiki": "West_Acton_tube_station"
+  },
+  {
+    "name": "West Brompton",
+    "system": "lu",
+    "line": "District",
+    "opened": "1869-04-12",
+    "wiki": "West_Brompton_station"
+  },
+  {
+    "name": "West Finchley",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1940-04-14",
+    "wiki": "West_Finchley_tube_station"
+  },
+  {
+    "name": "West Ham",
+    "system": "lu",
+    "line": "District, H&C, Jubilee",
+    "opened": "1902-06-02",
+    "wiki": "West_Ham_station"
+  },
+  {
+    "name": "West Hampstead",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1879-06-30",
+    "wiki": "West_Hampstead_tube_station"
+  },
+  {
+    "name": "West Harrow",
+    "system": "lu",
+    "line": "Met.",
+    "opened": "1913-11-17",
+    "wiki": "West_Harrow_tube_station"
+  },
+  {
+    "name": "West Kensington",
+    "system": "lu",
+    "line": "District",
+    "opened": "1874-09-09",
+    "wiki": "West_Kensington_tube_station"
+  },
+  {
+    "name": "West Ruislip",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1948-11-21",
+    "wiki": "West_Ruislip_station"
+  },
+  {
+    "name": "Westbourne Park",
+    "system": "lu",
+    "line": "H&C, Circle",
+    "opened": "1866-02-01",
+    "wiki": "Westbourne_Park_tube_station"
+  },
+  {
+    "name": "Westminster",
+    "system": "lu",
+    "line": "District, Circle, Jubilee",
+    "opened": "1868-12-24",
+    "wiki": "Westminster_tube_station"
+  },
+  {
+    "name": "White City",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-11-23",
+    "wiki": "White_City_tube_station"
+  },
+  {
+    "name": "Whitechapel",
+    "system": "lu",
+    "line": "District, H&C",
+    "opened": "1884-10-01",
+    "wiki": "Whitechapel_station"
+  },
+  {
+    "name": "Willesden Green",
+    "system": "lu",
+    "line": "Jubilee",
+    "opened": "1879-11-24",
+    "wiki": "Willesden_Green_tube_station"
+  },
+  {
+    "name": "Willesden Junction",
+    "system": "lu",
+    "line": "Bakerloo",
+    "opened": "1915-05-10",
+    "wiki": "Willesden_Junction_station"
+  },
+  {
+    "name": "Wimbledon",
+    "system": "lu",
+    "line": "District",
+    "opened": "1889-06-03",
+    "wiki": "Wimbledon_station"
+  },
+  {
+    "name": "Wimbledon Park",
+    "system": "lu",
+    "line": "District",
+    "opened": "1889-06-03",
+    "wiki": "Wimbledon_Park_tube_station"
+  },
+  {
+    "name": "Wood Green",
+    "system": "lu",
+    "line": "Piccadilly",
+    "opened": "1932-09-19",
+    "wiki": "Wood_Green_tube_station"
+  },
+  {
+    "name": "Wood Lane",
+    "system": "lu",
+    "line": "H&C, Circle",
+    "opened": "2008-10-12",
+    "wiki": "Wood_Lane_tube_station"
+  },
+  {
+    "name": "Woodford",
+    "system": "lu",
+    "line": "Central",
+    "opened": "1947-12-14",
+    "wiki": "Woodford_tube_station"
+  },
+  {
+    "name": "Woodside Park",
+    "system": "lu",
+    "line": "Northern",
+    "opened": "1940-04-12",
+    "wiki": "Woodside_Park_tube_station"
   }
 ]

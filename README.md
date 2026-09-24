@@ -18,6 +18,7 @@ This is a good vibes Claude Code repo, have fun! 😎
 - **BART / San Francisco** (50 stations, since 1972)
 - **MARTA / Atlanta** (38 stations, since 1979)
 - **Montreal Metro** (68 stations, since 1966)
+- **London Underground** (272 stations, since 1863)
 
 ## Features
 
@@ -54,7 +55,7 @@ node scripts/scrape-wikipedia.mjs > scripts/scraped-stations.json
 node scripts/generate-stations-ts.mjs > src/data/stations.ts
 ```
 
-The first command scrapes Wikipedia for NYC, WMATA, CTA, BART, MARTA, and Montreal Metro stations. The second merges the scraped data with manual MBTA/SEPTA/RTA entries, fetches coordinates from the Wikipedia API, and generates the TypeScript data file.
+The first command scrapes Wikipedia for NYC, WMATA, CTA, BART, MARTA, Montreal Metro, and London Underground stations. The second merges the scraped data with manual MBTA/SEPTA/RTA entries, fetches coordinates from the Wikipedia API, and generates the TypeScript data file.
 
 ## Built with
 
